@@ -1,0 +1,15 @@
+/* opengisch.css */
+/* @theme opengisch */
+
+@import 'default';
+
+section {
+  /* Override default background */
+  background: green;
+}
+
+h1 {
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #fff;
+  text-align: left;
+}

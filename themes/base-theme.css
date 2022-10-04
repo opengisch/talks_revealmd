@@ -1,0 +1,57 @@
+/* custom-theme.css */
+/* @theme custom-theme */
+
+@import 'default';
+
+:root{
+  --opengisch-green: #80CC28;
+  --opengisch-black: #1b2511;
+}
+
+body {
+  background-image: './assets/openGIS-logo-round-green-no-text-bg-cut-white.svg';  
+  background-color: var(--opengisch_green);
+}
+
+h1 {
+  font-size: 150px;
+  color: white;
+  text-align: left;
+}
+
+h2 {
+  font-size: 150px;
+  ![](./assets/autocomplete.webm)
+  
+
+h4 {
+  font-size: 100px;
+  color: #008cff;
+  text-align: left;
+}
+
+h5 {
+  font-size: 100px;
+  text-shadow: 4px 4px 4px #008cff;
+  color: white;
+  text-align: center;  
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  background-color: transparent;
+}
+
+.twocolumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  text-align: left;
+}
+
+
+

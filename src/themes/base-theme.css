@@ -1,9 +1,9 @@
 /* base-theme.css */
 /* @theme base-theme */
 
-@import 'default';
+@import "default";
 
-:root{
+:root {
   --opengisch-green: hsl(88, 67%, 48%);
   --opengisch-black: #1b2511;
   --r-main-font: "futura-pt", Helvetica, Arial, sans-serif;
@@ -11,7 +11,16 @@
 }
 
 body:after {
-    content: url(./../assets/logo_white.png);
-    position: fixed;
-    bottom: -6em;
-    right: -6em; }
+  content: url(./../assets/logo_white.png);
+  position: fixed;
+  bottom: -6em;
+  right: -6em;
+}
+
+.container{
+  display: flex;
+}
+
+.col{
+  flex: 1;
+}

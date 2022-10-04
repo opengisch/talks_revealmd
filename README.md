@@ -40,3 +40,14 @@ To set the size of the image use this syntax:
 ```
 
 ### Handling of multiple lines
+
+
+### Having two or more equal sized columns
+
+<div class="container">
+<div class="col">column 1</div>
+<div class="col">column 2</div>
+<div class="col">column 3</div>
+</div>
+
+NOTE: the HTML tags MUST be without any indentation!

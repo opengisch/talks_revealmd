@@ -5,10 +5,6 @@ theme: white
 customTheme: themes/pitch-theme
 ---
 
-# QField
-## Because data is outside
-
----
 
 ![w: 100% h:30%](./assets/social_distancing_love_os.png)
 
@@ -36,8 +32,7 @@ customTheme: themes/pitch-theme
 ---
 
 ![w: 100% h:30%](./assets/qfield_device_landscape.png)
-
-### The mobile data collection app for QIGS
+The mobile data collection app for QIGS
 
 ---
 
@@ -278,11 +273,12 @@ img[alt~="center"] {
 
 ##### Join the effort
 
----
 
+---
+ 
 ![bg](./assets/customer.JPG)
 
-##### Your custom app
+##### Your custom pp
 
 ---
 

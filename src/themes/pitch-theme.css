@@ -3,8 +3,8 @@
 
 @import 'base-theme.css';
 
-section {
-    background-color: var(--opengisch-green);
+:root {
+    --r-background-color: var(--opengisch-green);
 }
 
 h1 {

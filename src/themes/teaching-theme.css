@@ -1,0 +1,7 @@
+/* teaching-theme.css */
+
+@import 'base-theme.css';
+
+section {
+    background-color: pink;
+}

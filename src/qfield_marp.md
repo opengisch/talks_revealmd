@@ -1,8 +1,8 @@
 ---
+marp: true
 title: QField
 description: QField Feature presentation
-theme: white
-customTheme: themes/pitch-theme
+theme: custom-theme
 ---
 
 # QField

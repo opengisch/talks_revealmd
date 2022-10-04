@@ -1,0 +1,9 @@
+/* base-theme.css */
+/* @theme base-theme */
+
+@import 'default';
+
+:root{
+  --opengisch-green: #80CC28;
+  --opengisch-black: #1b2511;
+}

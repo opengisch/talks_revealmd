@@ -1,0 +1,8 @@
+/* pitch-theme.css */
+/* @theme pitch-theme*/
+
+@import 'base-theme.css';
+
+section {
+    background-color: var(--opengisch-green);
+}

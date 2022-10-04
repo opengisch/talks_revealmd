@@ -6,3 +6,8 @@
 section {
     background-color: var(--opengisch-green);
 }
+
+h1 {
+    color: #008cff;
+    -webkit-text-stroke: 2px #2880cc; 
+}

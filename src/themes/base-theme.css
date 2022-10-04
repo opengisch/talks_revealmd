@@ -4,9 +4,14 @@
 @import 'default';
 
 :root{
-  --opengisch-green: #80CC28;
+  --opengisch-green: hsl(88, 67%, 48%);
   --opengisch-black: #1b2511;
   --r-main-font: Arial, Helvetica, sans-serif;
   --r-heading-font: Arial, Helvetica, sans-serif;
-
 }
+
+body:after {
+    content: url(./../assets/logo.svg);
+    position: fixed;
+    bottom: 1em;
+    right: 1em; }

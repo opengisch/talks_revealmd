@@ -2,7 +2,6 @@
 
 1. Install VS Code wiht the extension vscode-reveal
 
-2. 
 
 ## Header Section of your file
 ```yaml
@@ -40,3 +39,4 @@ To set the size of the image use this syntax:
 ![](./assets/qfield_device_landscape.png){width="100%" height="30%"}
 ```
 
+### Handling of multiple lines

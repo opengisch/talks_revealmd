@@ -10,7 +10,7 @@ customTheme: themes/pitch-theme
 
 ---
 
-![w: 100% h:30%](./assets/social_distancing_love_os.png)
+![](./assets/social_distancing_love_os.png){width="100%" height="30%"}
 
 #### Open source Geoninjas
 ### Made in Switzerland
@@ -22,7 +22,7 @@ customTheme: themes/pitch-theme
 
 ---
 
-![bg](./assets/mercator-bw.jpg)
+<!-- .slide: data-background="./assets/mercator-bw.jpg"-->
 
 ## Because
 # data is outside
@@ -35,49 +35,53 @@ customTheme: themes/pitch-theme
 
 ---
 
-![w: 100% h:30%](./assets/qfield_device_landscape.png)
+![](./assets/qfield_device_landscape.png){width="100%" height="30%"}
 
 ### The mobile data collection app for QIGS
 
 ---
 
-![bg](./assets/qfield_canvas.png)
+<!-- .slide: data-background="./assets/qfield_canvas.png"-->
 
 ##### Minimalist UI
 
 ---
 
-![bg](./assets/qfield_tec_green.jpg)
+<!-- .slide: data-background="./assets/qfield_tec_green.jpg"-->
+
 
 ##### Beautiful cartography
 
 ---
 
-![bg](./assets/powerful.png)
+<!-- .slide: data-background="./assets/powerful.png"-->
+
 
 ##### Powerful tools
 
 ---
 
-![bg](./assets/efficient.png)
+<!-- .slide: data-background="./assets/efficient.png"-->
 
-##### Efficient interaction
+
+#### Efficient interaction
 
 ---
 
-![bg](./assets/integrated.png)
+<!-- .slide: data-background="./assets/integrated.png"-->
+
 
 ##### Beneficial integrations
 
 ---
 
-![bg](./assets/qfield_trimble.jpeg)
+<!-- .slide: data-background="./assets/qfield_trimble.jpeg"-->
 
 ##### Professional hardware
 
 ---
 
-![bg](./assets/cloud.png)
+<!-- .slide: data-background="./assets/cloud.png"-->
 
 ##### QFieldCloud
 
@@ -88,19 +92,19 @@ customTheme: themes/pitch-theme
 
 ---
 
-![bg](./assets/qgis_advanced_bee_farming.png)
+<!-- .slide: data-background="./assets/qgis_advanced_bee_farming.png"-->
 
 ##### Comfortably prepare the work on your QGIS desktop
 
 ---
 
-![bg](./assets/qfield_on_field.jpg)
+<!-- .slide: data-background="./assets/qfield_on_field.jpg"-->
 
 ##### Efficiently work on your GIS data outdoor
 
 ---
 
-![bg](./assets/qfield_cloud_synchronize.png)
+<!-- .slide: data-background="./assets/qfield_cloud_synchronize.png"-->
 
 ##### Seamlessly synchronise
 
@@ -235,7 +239,8 @@ customTheme: themes/pitch-theme
 
 ---
 
-![bg](./assets/real_cloud.jpg)
+<!-- .slide: data-background="./assets/real_cloud.jpg"-->
+
 
 <style>
 img[alt~="center"] {
@@ -248,25 +253,28 @@ img[alt~="center"] {
 
 ---
 
-![bg](./assets/windows_crop.jpg)
+<!-- .slide: data-background="./assets/windows_crop.jpg"-->
 
 ##### QField on Windows
 
 ---
 
-![bg](./assets/ipad_crop.jpg)
+<!-- .slide: data-background="./assets/ipad_crop.jpg"-->
+
 
 ##### QField on iOS
 
 ---
 
-![bg](./assets/ipad_crop.jpg)
+<!-- .slide: data-background="./assets/ipad_crop.jpg"-->
+
 
 ##### qfield.org/get
 
 ---
 
-![bg](./assets/taivaskero.jpg)
+<!-- .slide: data-background="./assets/taivaskero.jpg"-->
+
 
 ##### Taivaskero
 ##### 400k downloads
@@ -274,13 +282,13 @@ img[alt~="center"] {
 
 ---
 
-![bg](./assets/qfield_love.png)
+<!-- .slide: data-background="./assets/qfield_love.png"-->
 
 ##### Join the effort
 
 ---
 
-![bg](./assets/customer.JPG)
+<!-- .slide: data-background="./assets/customer.JPG"-->
 
 ##### Your custom app
 

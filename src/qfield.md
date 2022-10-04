@@ -3,8 +3,26 @@ title: QField
 description: QField Feature presentation
 theme: white
 customTheme: themes/pitch-theme
+verticalSeparator: --v--
+transition: fade
 ---
 
+# QField
+
+---
+
+# QField
+## QField
+### QField
+#### QField
+##### QField
+###### QField
+
+<h1 >QField <span class=blue> again</span></h1>
+
+## Because data is outside
+
+---
 
 ![](./assets/social_distancing_love_os.png){width="100%" height="30%"}
 
@@ -113,125 +131,132 @@ customTheme: themes/pitch-theme
 
 ## Powerful Feature Forms
 
----
+--v--
 
-![](./assets/video/form_widgets.webm)
 
----
+### Supercool Forms
 
-![](./assets/video/conditional_visibility.webm)
+<video src="./assets/video/form_widgets.webm" controls></video>
 
----
+--v--
 
-![](./assets/video/live_default.webm)
+### Conditional visibility
+<video data-autoplay src="./assets/video/conditional_visibility.webm" controls></video>
+
+--v--
+
+### Default Values
+<video src="./assets/video/live_default.webm" controls></video>
 
 ---
 
 ## Camera and special widgets
 
----
+--v--
 
-![](./assets/video/camera_file.webm)
+### Camera
+<video src="./assets/video/camera_file.webm" controls></video>
 
----
+--v--
 
-![](./assets/video/qml_html.webm)
+### QML Widgets
+<video src="./assets/video/qml_html.webm" controls></video>
 
 ---
 
 ## Multi Attribute Editing
 
----
+--v--
 
-![](./assets/video/multi_editing.webm)
+<video src="./assets/video/multi_editing.webm" controls></video>
 
 ---
 
 ## Relation integration
 
----
+--v--
 
-![](./assets/video/relation_widgets.webm)
+<video src="./assets/video/relation_widgets.webm" controls></video>
 
----
+--v--
 
-![](./assets/video/ordered_releation.webm)
+<video src="./assets/video/ordered_releation.webm" controls></video>
 
----
+--v--
 
-![](./assets/video/autocomplete.webm)
+<video src="./assets/video/autocomplete.webm" controls></video>
 
 ---
 
 ## Opening of individual datasets
 
----
+--v--
 
-![](./assets/video/opening_individual_vector.webm)
+<video src="./assets/video/opening_individual_vector.webm" controls></video>
 
----
+--v--
 
-![](./assets/video/opening_individual_raster.webm)
+<video src="./assets/video/opening_individual_raster.webm" controls></video>
 
 ---
 
 ## Mapthemes
 
----
+--v--
 
-![](./assets/video/theme.webm)
+<video src="./assets/video/theme.webm" controls></video>
 
 ---
 
 ## Search for Attributes and Coordinates
 
----
+--v--
 
-![](./assets/video/search.webm)
+<video src="./assets/video/search.webm" controls></video>
 
 ---
 
 ## Measuring tool
 
----
+--v--
 
-![](./assets/video/measuring.webm)
+<video src="./assets/video/measuring.webm" controls></video>
 
 ---
 
 ## Geometry editing and drawing
 
----
+--v--
 
-![](./assets/video/edit_geom.webm)
+<video src="./assets/video/edit_geom.webm" controls></video>
 
----
+--v--
 
-![](./assets/video/edit_topo.webm)
+<video src="./assets/video/edit_topo.webm" controls></video>
 
----
+--v--
 
-![](./assets/video/freehand_drawing.webm)
+<video src="./assets/video/freehand_drawing.webm" controls></video>
 
 ---
 
 ## GNSS and tracking
 
----
+--v--
 
-![](./assets/video/tracking.webm)
+<video src="./assets/video/tracking.webm" controls></video>
 
----
+--v--
 
-![](./assets/video/NMEA.webm)
+<video src="./assets/video/NMEA.webm" controls></video>
 
 ---
 
 ## Print Atlas to PDF
 
----
+--v--
 
-![](./assets/video/print_pdf.webm)
+<video src="./assets/video/print_pdf.webm" controls></video>
 
 ---
 

@@ -5,9 +5,20 @@
 
 :root {
     --r-background-color: var(--opengisch-green);
+    --r-heading1-size: 10vw;
+    --r-heading2-size: 200px;
+    --r-heading3-size: 100px;
+    --r-heading4-size: 80px;
+    --r-heading5-size: 60px;
+    --r-heading6-size: 40px;
 }
 
-h1 {
-    color: #008cff;
-    -webkit-text-stroke: 2px #2880cc; 
+h1, h2, h3, h4, h5, h6 {
+    color: var(--opengisch-light) !important;
+    -webkit-text-stroke: 3px var(--opengisch-blue); 
 }
+
+h5, h6 {
+    -webkit-text-stroke: 1px var(--opengisch-blue); 
+}
+

@@ -27,6 +27,8 @@ If you want to override `#QField` style being pink, you can make it manually wit
 <h1 style="color:pink">QField</h1>
 ```
 
+Classes used in <span> (not only)
+
 ### Using of images
 
 When you want to have an image as background use this:

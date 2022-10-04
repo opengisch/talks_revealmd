@@ -5,17 +5,43 @@
 
 :root {
   --opengisch-green: hsl(88, 67%, 48%);
-  --opengisch-black: #1b2511;
+  --opengisch-blue: #2880cc; 
+  --opengisch-dark: #1b2511; 
+  --opengisch-light: #efefef;
+
   --r-main-font: "futura-pt", Helvetica, Arial, sans-serif;
   --r-heading-font: "futura-pt", Helvetica, Arial, sans-serif;
 }
+
+/* color classes used for texts */
+
+.blue {
+  color: var(--opengisch-blue) !important;
+}
+
+.green {
+  color: var(--opengisch-green) !important;
+}
+
+.light {
+  color: var(--opengisch-light) !important;
+}
+
+.dark {
+  color: var(--opengisch-dark) !important;
+}
+
+/* opengisch logo */
 
 body:after {
   content: url(./../assets/logo_white.png);
   position: fixed;
   bottom: -6em;
   right: -6em;
+  z-index: -1;
 }
+
+/* classes used for multiple columns */
 
 .container{
   display: flex;

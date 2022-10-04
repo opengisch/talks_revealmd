@@ -5,10 +5,6 @@ theme: white
 customTheme: themes/pitch-theme
 ---
 
-# QField
-## Because data is outside
-
----
 
 ![](./assets/social_distancing_love_os.png){width="100%" height="30%"}
 
@@ -286,11 +282,9 @@ img[alt~="center"] {
 
 ##### Join the effort
 
----
-
 <!-- .slide: data-background="./assets/customer.JPG"-->
 
-##### Your custom app
+##### Your custom pp
 
 ---
 

@@ -2,11 +2,22 @@
 
 ## Creating and editing presentations
 
-1. Install VS Code with the extension vscode-reveal
-
+1. Install VSCode with the extension vscode-reveal
+2. Clone this repository, to re-use existing contents, and later add your contributions.
+```{bash}
+git clone git@github.com:opengisch/talks_revealmd.git
+```
+3. Create a new branch named after your new presentation
+```{bash}
+git checkout -b slides/<my-example-presentation>
+```
+4. Create a new markdown file, `<my-example-presentation>.md`.
 
 ## Header Section of your file
-```yaml
+
+Start with adding a header section to the `.md` file:
+
+```{yaml}
 ---
 title: QField
 description: QField Feature presentation
@@ -21,9 +32,41 @@ Use `pitch-theme` for heavy-titled slides for pitches like this:
 Use `teaching-theme` for slimmer font for workshop and teaching presentations.
 <image of teaching slide>
 
+## Preview the slides
+
+A comfortable way to edit and live-preview contents is using VSCode and enabling
+the `VSCode Reveal` plugin. You can just click on the plugin on the left bar,
+which features a slide overview and currently four toolbar buttons at the top.
+If you split the editor right and click on `"Revealjs: Show presentation by
+side"`, then you can instantly navigate through the current snapshot of your
+presentation.
+
 ## Build the slides
 
-    docker run --rm -v $(pwd)/slides:/slides -v $(pwd)/html:/html webpronl/reveal-md:latest /slides --static /html --assets-dir assets --static-dirs _assets/theme
+If you like the docker way of doing things, simply render the slides like this:
+
+```{bash}
+docker run --rm -v $(pwd)/slides:/slides \
+  -v $(pwd)/html:/html webpronl/ryeveal-md:latest /slides \
+  --static /html --assets-dir assets --static-dirs _assets/theme
+```
+
+Alternatively, you can get the lastest stable version with the npm manager
+(might need to upgrade/install npm before):
+
+```{bash}
+# Using Ubuntu
+curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+sudo apt-get install -y nodejs
+# sudo npm install -g npm@latest
+npm install -g reveal-md
+```
+
+Build the slides with
+
+```{bash}
+reveal-md slides/qfield.md
+```
 
 ## Tipps and Tricks
 
@@ -42,17 +85,19 @@ Classes used in <span> (not only)
 
 If you want to set an image as slide background, use this:
 
-```html
+```{html}
 <!-- .slide: data-background="./assets/mercator-bw.jpg"-->
 ```
 
 To set the size of the image, use this syntax:
 
-```md
+```{md}
 ![](./assets/qfield_device_landscape.png){width="100%" height="30%"}
 ```
 
 Note that you need to specify both `width` and `height`.
+
+### Tables
 
 ### Handling multiple lines
 
@@ -61,7 +106,7 @@ Note that you need to specify both `width` and `height`.
 
 If you want to place text and other elements, you can use containers:
 
-```html
+```{html}
 <div class="container">
 <div class="col">column 1</div>
 <div class="col">column 2</div>

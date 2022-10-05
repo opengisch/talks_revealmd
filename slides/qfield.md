@@ -2,7 +2,7 @@
 title: QField
 description: QField Feature presentation
 theme: theme/pitch-theme.css
-customTheme: _assets/theme/pitch-theme
+customTheme: ./_assets/theme/pitch-theme
 verticalSeparator: --v--
 transition: fade
 ---

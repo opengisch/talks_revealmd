@@ -15,10 +15,10 @@
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--opengisch-light) !important;
-    -webkit-text-stroke: 3px var(--opengisch-blue); 
+    -webkit-text-stroke: 3px var(--opengisch-blue);
 }
 
 h5, h6 {
-    -webkit-text-stroke: 1px var(--opengisch-blue); 
+    -webkit-text-stroke: 1px var(--opengisch-blue);
 }
 

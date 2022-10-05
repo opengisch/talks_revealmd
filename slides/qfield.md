@@ -4,52 +4,16 @@ description: QField Feature presentation
 theme: theme/pitch-theme.css
 customTheme: _assets/theme/pitch-theme
 verticalSeparator: --v--
-transition: fade
 revealOptions: {
-  transition: 'fade',
-  transitionSpeed: 'default',
-  backgroundTransition: 'default',
-  controls: true,
-  controlsTutorial: true,
-  controlsLayout: 'bottom-right',
-  controlsBackArrows: 'faded',
-  progress: true,
+  transition: 'none',
   slideNumber: false,
-  keyboard: true,
   overview: true,
-  center: true,
-  touch: true,
-  loop: false,
-  rtl: false,
-  shuffle: false,
-  fragments: true,
-  fragmentInURL: false,
-  embedded: false,
-  help: true,
-  showNotes: false,
-  autoPlayMedia: null,
-  autoSlide: 0,
-  autoSlideStoppable: true,
-  autoSlideMethod: '0',
-  defaultTiming: 120,
-  mouseWheel: false,
-  }
+  autoPlayMedia: true,
+}
 ---
 
 # QField
-
----
-
-# QField
-## QField
-### QField
-#### QField
-##### QField
-###### QField
-
-<h1 >QField <span class=blue> again</span></h1>
-
-## Because data is outside
+<h2 class=blue> Because data is outside</h2>
 
 ---
 

@@ -4,7 +4,13 @@ description: PoC for reveal.js
 theme: theme/teaching-theme.css
 customTheme: _assets/theme/teaching-theme
 verticalSeparator: --v--
-transition: fade
+transition: none
+revealOptions: {
+  transition: 'none',
+  slideNumber: false,
+  overview: true,
+  autoPlayMedia: true,
+}
 ---
 
 # Modernize the Talks repository

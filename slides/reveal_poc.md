@@ -75,6 +75,30 @@ Note: Though there is no big winner, we decided to go on with Reveal.js. The VS 
 
 ---
 
+### Tables
+
+<div class="container">
+<div class="col">
+<h3> In md </h3 >
+
+```{md}
+| item   | description         |
+|--------|---------------------|
+| list A | Contains A elements |
+| list B | Contains B elements |
+```
+
+</div>
+<div class="col">
+<h3> Rendered </h3 >
+
+| item   | description         |
+|--------|---------------------|
+| list A | Contains A elements |
+| list B | Contains B elements |
+
+</div>
+
 ---
 
 ---

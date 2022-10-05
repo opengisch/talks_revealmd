@@ -57,11 +57,13 @@ Note that you need to specify both `width` and `height`.
 
 If you want to place text and other elements, you can use containers:
 
+```html
 <div class="container">
 <div class="col">column 1</div>
 <div class="col">column 2</div>
 <div class="col">column 3</div>
 </div>
+```
 
 Please not that the HTML tags MUST be without any indentation, otherwise the
 content is not correctly parsed from the `.md` file.

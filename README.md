@@ -1,5 +1,20 @@
 ## Overview
 
+The goal of this repo is to template elegant slides with opengis.ch themes.
+It allows you to write with simple markdown syntax, so no need to get
+your hands into HTML, CSS, and JS.
+
+* [Creating and editing presentations](#creating-and-editing-presentations)
+* [Header Section of your file](#header-section-of-your-file)
+* [Preview the slides](#preview-the-slides)
+* [Build the slides](#build-the-slides)
+* [Tips and Tricks](#tips-and-tricks)
+   * [Overriding font styling](#overriding-font-styling)
+   * [Images](#images)
+   * [Tables](#tables)
+   * [Handling multiple lines](#handling-multiple-lines)
+   * [Having two or more equal sized columns](#having-two-or-more-equal-sized-columns)
+
 ## Creating and editing presentations
 
 1. Install VSCode with the extension vscode-reveal
@@ -70,7 +85,7 @@ Build the slides with
 reveal-md slides/qfield.md
 ```
 
-## Tipps and Tricks
+## Tips and Tricks
 
 ### Overriding font styling
 
@@ -100,6 +115,15 @@ To set the size of the image, use this syntax:
 Note that you need to specify both `width` and `height`.
 
 ### Tables
+
+Standard markdown tables are supported out of the box:
+
+```{md}
+| item   | description                     |
+|--------|---------------------------------|
+| list A | Contains A elements of type `A` |
+| list B | Contains elements of type `B`   |
+```
 
 ### Handling multiple lines
 

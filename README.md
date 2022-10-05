@@ -34,6 +34,8 @@ Use `teaching-theme` for slimmer font for workshop and teaching presentations.
 
 ## Preview the slides
 
+[](doc/img/reveal-md_code-plugin.png)
+
 A comfortable way to edit and live-preview contents is using VSCode and enabling
 the `VSCode Reveal` plugin. You can just click on the plugin on the left bar,
 which features a slide overview and currently four toolbar buttons at the top.

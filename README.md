@@ -20,9 +20,13 @@ Use teaching-theme for slimmer font for workshop and teaching presentations.
 <image of teaching slide>
 
 ## Build the slides
+```
+docker run --rm -v $(pwd)/slides:/slides -v $(pwd)/html:/html webpronl/reveal-md:latest /slides --static /html --assets-dir assets --static-dirs _assets/theme
+```
 
-    docker run --rm -v $(pwd)/slides:/slides -v $(pwd)/html:/html webpronl/reveal-md:latest /slides --static /html --assets-dir assets --static-dirs _assets/theme
-
+```
+docker run --rm -v $(pwd)/slides:/slides -v $(pwd)/html:/html -v $(pwd)/template_overrides/reveal.html:/app/lib/template/reveal.html webpronl/reveal-md:latest slides --static /html --assets-dir assets --static-dirs _assets/theme
+```
 ## Tipps and Tricks
 
 ### Override font style

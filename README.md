@@ -70,7 +70,7 @@ Build the slides with
 reveal-md slides/qfield.md
 ```
 
-## Tipps and Tricks
+## Tips and Tricks
 
 ### Overriding font styling
 
@@ -100,6 +100,15 @@ To set the size of the image, use this syntax:
 Note that you need to specify both `width` and `height`.
 
 ### Tables
+
+Standard markdown tables are supported out of the box:
+
+```{md}
+| item   | description                     |
+|--------|---------------------------------|
+| list A | Contains A elements of type `A` |
+| list B | Contains elements of type `B`   |
+```
 
 ### Handling multiple lines
 

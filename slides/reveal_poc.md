@@ -123,7 +123,33 @@ looks like this:
 1. **First** *item*
 1. Second Item
 1. Third `item`
-1. Fourth item 
+1. Fourth item
+
+---
+
+### Tables
+
+<div class="container">
+<div class="col">
+<h3> In md </h3 >
+
+```{md}
+| item   | description         |
+|--------|---------------------|
+| list A | Contains A elements |
+| list B | Contains B elements |
+```
+
+</div>
+<div class="col">
+<h3> Rendered </h3 >
+
+| item   | description         |
+|--------|---------------------|
+| list A | Contains A elements |
+| list B | Contains B elements |
+
+</div>
 
 ---
 

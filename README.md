@@ -137,7 +137,7 @@ Alternatively, you can get the lastest stable version with the npm manager
 (might need to upgrade/install npm before):
 
 ```{bash}
-# Using Ubuntu
+# Using Ubuntu OS
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 sudo apt-get install -y nodejs
 # sudo npm install -g npm@latest

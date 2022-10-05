@@ -18,13 +18,13 @@ revealOptions: {
 
 ---
 
-### Given state
+## Given state
 - /talks repository with html
 - /public-talks repository with some MARP prototyping
 
 ---
 
-### Goal
+## Goal
 
 - Decide for a way to go
 - Set up a working repository
@@ -71,29 +71,114 @@ revealOptions: {
 
 ---
 
-### Reveal.js
+## Reveal.js
 
 Note: Though there is no big winner, we decided to go on with Reveal.js. The VS Code integration is nicer, the community is bigger and one can influence more the backend.
 
 ---
 
-### Let's see some examples
+## Let's see some examples
 
 ---
 
+### Standard markdown stuff
+
 ---
+
+#### Quotes
+
+```md
+> This is quoted text.
+```
+
+looks like this:
+
+> This is quoted text.
+
+---
+
+#### Tables
+
+```md
+> This is quoted text.
+```
+
+looks like this:
+
+> This is quoted text.
+
+---
+
+#### Lists with formated text
+
+```md
+1. **First** *item*
+1. Second Item
+1. Third `item`
+1. Fourth item 
+```
+
+looks like this:
+
+1. **First** *item*
+1. Second Item
+1. Third `item`
+1. Fourth item 
+
+---
+
+### Or using HTML and CSS
+
+---
+
+#### Multiple columns
+
+```html
+<div class="container">
+<div class="col">column 1</div>
+<div class="col">column 2</div>
+<div class="col">column 3</div>
+</div>
+```
+looks like this:
+
+<div class="container">
+<div class="col">column 1</div>
+<div class="col">column 2</div>
+<div class="col">column 3</div>
+</div>
+
+---
+
+#### Background image
+
+```html
+<!-- .slide: data-background="./assets/mercator-bw.jpg"-->
+```
+
+---
+
+#### Override styles
+
+```html
+<h1 style="color:pink">Just use CSS</h1>
+```
+looks like:
+<h1 style="color:yellow">Just use CSS</h1>
 
 ---
 
 ## Final state
-- Running Repository
+- Theme-Prototypes for Pitch and for Teaching
+- Running Repository www.github.com/opengisch/talks-reveal_md
 - README.md for "Starters"
 
 ---
 
-## To does
+## To do's
+- Finetune CSS (improve teaching theme)
 - Update Presentations
-- Running Repository
+- Improve CIs
 - Change Repository to official talks
 
 ---

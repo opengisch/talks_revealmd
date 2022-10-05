@@ -4,6 +4,7 @@ description: QField Feature presentation
 theme: theme/pitch-theme.css
 customTheme: _assets/theme/pitch-theme
 verticalSeparator: --v--
+transition: none
 revealOptions: {
   transition: 'none',
   slideNumber: false,
@@ -13,189 +14,185 @@ revealOptions: {
 ---
 
 # QField
-<h2 class=blue> Because data is outside</h2>
+
+<h4 class=blue>Because data is outside</h4>
 
 ---
 
 ![](./assets/social_distancing_love_os.png){width="100%" height="30%"}
 
 #### Open source Geoninjas
-### Made in Switzerland
+##### Made in Switzerland
 
 ---
 
-## Why
-# QField ?
+<h2 class=blue>Why QField?</h2>
 
 ---
 
 <!-- .slide: data-background="./assets/mercator-bw.jpg"-->
 
-## Because
-# data is outside
-## the office
+### Because data is outside the office
 
 ---
 
-## What is
-# QField ?
+<h2 class=blue>What is QField?</h2>
 
 ---
 
 ![](./assets/qfield_device_landscape.png){width="100%" height="30%"}
 
-### The mobile data collection app for QIGS
+#### The mobile data collection app for QGIS
 
 ---
 
-<!-- .slide: data-background="./assets/qfield_canvas.png"-->
+![](./assets/qfield_canvas.png)
 
-##### Minimalist UI
-
----
-
-<!-- .slide: data-background="./assets/qfield_tec_green.jpg"-->
-
-
-##### Beautiful cartography
+#### Minimalist UI
 
 ---
 
-<!-- .slide: data-background="./assets/powerful.png"-->
+![](./assets/efficient.png)
 
 
-##### Powerful tools
+#### Beautiful cartography
 
 ---
 
-<!-- .slide: data-background="./assets/efficient.png"-->
+![](./assets/powerful.png)
+
+
+#### Powerful tools
+
+---
+
+![](./assets/efficient.png)
 
 
 #### Efficient interaction
 
 ---
 
-<!-- .slide: data-background="./assets/integrated.png"-->
+![](./assets/integrated.png)
 
 
-##### Beneficial integrations
-
----
-
-<!-- .slide: data-background="./assets/qfield_trimble.jpeg"-->
-
-##### Professional hardware
+#### Beneficial integrations
 
 ---
 
-<!-- .slide: data-background="./assets/cloud.png"-->
+![](./assets/qfield_canvas.png)
 
-##### QFieldCloud
+#### Professional hardware
 
 ---
 
-## How to work with
-# QField ?
+![](./assets/cloud.png)
+
+#### QFieldCloud
+
+---
+
+<h2 class=blue>How to work with QField </h2>
 
 ---
 
 <!-- .slide: data-background="./assets/qgis_advanced_bee_farming.png"-->
 
-##### Comfortably prepare the work on your QGIS desktop
+### Comfortably prepare the work on your QGIS desktop
 
 ---
 
 <!-- .slide: data-background="./assets/qfield_on_field.jpg"-->
 
-##### Efficiently work on your GIS data outdoor
+### Efficiently work on your GIS data outdoor
 
 ---
 
 <!-- .slide: data-background="./assets/qfield_cloud_synchronize.png"-->
 
-##### Seamlessly synchronise
+### Seamlessly synchronise
 
 ---
 
-## What is in
-# QField ?
+<h2 class=blue>What is in QField?</h2>
 
 ---
 
-## Powerful Feature Forms
+### Powerful Feature Forms
 
 --v--
 
-
 #### Supercool Forms
-
-<!-- .slide: data-background="black" -->
 
 <video src="./assets/video/form_widgets.webm" controls></video>
 
 --v--
 
 #### Conditional visibility
+
 <video data-autoplay src="./assets/video/conditional_visibility.webm" controls></video>
 
 --v--
 
-### Default Values
+#### Default Values
 <video src="./assets/video/live_default.webm" controls></video>
 
 ---
 
-## Camera and special widgets
+### Camera and special widgets
 
 --v--
 
-### Camera
+#### Camera
 <video src="./assets/video/camera_file.webm" controls></video>
 
 --v--
 
-### QML Widgets
+#### QML Widgets
 <video src="./assets/video/qml_html.webm" controls></video>
 
 ---
 
-## Multi Attribute Editing
-
---v--
+#### Multi Attribute Editing
 
 <video src="./assets/video/multi_editing.webm" controls></video>
 
 ---
 
-## Relation integration
+### Relation integration
 
 --v--
 
+#### Relation Widgets
 <video src="./assets/video/relation_widgets.webm" controls></video>
 
 --v--
 
+#### Ordered Relations
 <video src="./assets/video/ordered_releation.webm" controls></video>
 
 --v--
 
+#### Autocompleter
 <video src="./assets/video/autocomplete.webm" controls></video>
 
 ---
 
-## Opening of individual datasets
+### Opening of individual datasets
 
 --v--
 
+#### Open vectors
 <video src="./assets/video/opening_individual_vector.webm" controls></video>
 
 --v--
 
+#### Open rasters
 <video src="./assets/video/opening_individual_raster.webm" controls></video>
 
 ---
 
-## Mapthemes
+### Mapthemes
 
 --v--
 
@@ -203,7 +200,7 @@ revealOptions: {
 
 ---
 
-## Search for Attributes and Coordinates
+### Search for Attributes and Coordinates
 
 --v--
 
@@ -211,7 +208,7 @@ revealOptions: {
 
 ---
 
-## Measuring tool
+### Measuring tool
 
 --v--
 
@@ -219,23 +216,26 @@ revealOptions: {
 
 ---
 
-## Geometry editing and drawing
+### Geometry editing and drawing
 
 --v--
 
+#### Edit geometry
 <video src="./assets/video/edit_geom.webm" controls></video>
 
 --v--
 
+#### Topological
 <video src="./assets/video/edit_topo.webm" controls></video>
 
 --v--
 
+#### Freehand drawing
 <video src="./assets/video/freehand_drawing.webm" controls></video>
 
 ---
 
-## GNSS and tracking
+### GNSS and tracking
 
 --v--
 
@@ -247,7 +247,7 @@ revealOptions: {
 
 ---
 
-## Print Atlas to PDF
+### Print Atlas to PDF
 
 --v--
 
@@ -257,58 +257,52 @@ revealOptions: {
 
 <!-- .slide: data-background="./assets/real_cloud.jpg"-->
 
-
-<style>
-img[alt~="center"] {
-  display: block;
-  margin: 0 auto;
-}
-</style>
-
-![w:900 center](./assets/logo_horizontal.png)
+![](./assets/logo_horizontal.png)
 
 ---
 
 <!-- .slide: data-background="./assets/windows_crop.jpg"-->
 
-##### QField on Windows
+## QField on Windows
 
 ---
 
 <!-- .slide: data-background="./assets/ipad_crop.jpg"-->
 
 
-##### QField on iOS
+## QField on iOS
 
 ---
 
 <!-- .slide: data-background="./assets/ipad_crop.jpg"-->
 
 
-##### qfield.org/get
+### qfield.org/get
 
 ---
 
 <!-- .slide: data-background="./assets/taivaskero.jpg"-->
 
 
-##### Taivaskero
-##### 400k downloads
-##### 110k monthly users
+### Taivaskero
+#### 400k downloads
+#### 110k monthly users
 
 ---
 
 <!-- .slide: data-background="./assets/qfield_love.png"-->
 
-##### Join the effort
-
-<!-- .slide: data-background="./assets/customer.JPG"-->
-
-##### Your custom pp
+### Join the effort
 
 ---
 
-### Thanks! Questions?
-### qfield.org | qfield.cloud
-### @opengisch
-### info@opengis.ch
+<!-- .slide: data-background="./assets/customer.JPG"-->
+
+### Your custom app
+
+---
+
+#### Thanks! Questions?
+#### qfield.org | qfield.cloud
+#### @opengisch
+#### info@opengis.ch

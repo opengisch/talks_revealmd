@@ -9,16 +9,13 @@
 h1, h2, h3, h4, h5, h6 {
     color: var(--opengisch-light) !important;
     -webkit-text-stroke: 2px var(--opengisch-dark);
-    text-align: left !important;
 }
 
 p {
-    color: var(--opengisch-dark) !important;    
-    text-align: left !important;
+    color: var(--opengisch-dark) !important;
 }
 
 ul {
     color: var(--opengisch-dark) !important;
-    list-style-type: circle;  
-
+    list-style-type: circle;
 }

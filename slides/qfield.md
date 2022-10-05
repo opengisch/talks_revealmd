@@ -2,9 +2,38 @@
 title: QField
 description: QField Feature presentation
 theme: theme/pitch-theme.css
-customTheme: ./_assets/theme/pitch-theme
+customTheme: _assets/theme/pitch-theme
 verticalSeparator: --v--
 transition: fade
+revealOptions: {
+  transition: 'fade',
+  transitionSpeed: 'default',
+  backgroundTransition: 'default',
+  controls: true,
+  controlsTutorial: true,
+  controlsLayout: 'bottom-right',
+  controlsBackArrows: 'faded',
+  progress: true,
+  slideNumber: false,
+  keyboard: true,
+  overview: true,
+  center: true,
+  touch: true,
+  loop: false,
+  rtl: false,
+  shuffle: false,
+  fragments: true,
+  fragmentInURL: false,
+  embedded: false,
+  help: true,
+  showNotes: false,
+  autoPlayMedia: null,
+  autoSlide: 0,
+  autoSlideStoppable: true,
+  autoSlideMethod: '0',
+  defaultTiming: 120,
+  mouseWheel: false,
+  }
 ---
 
 # QField
@@ -134,13 +163,15 @@ transition: fade
 --v--
 
 
-### Supercool Forms
+#### Supercool Forms
+
+<!-- .slide: data-background="black" -->
 
 <video src="./assets/video/form_widgets.webm" controls></video>
 
 --v--
 
-### Conditional visibility
+#### Conditional visibility
 <video data-autoplay src="./assets/video/conditional_visibility.webm" controls></video>
 
 --v--

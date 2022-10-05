@@ -2,7 +2,7 @@
 title: Reveal PoC
 description: PoC for reveal.js
 theme: theme/teaching-theme.css
-customTheme: ./_assets/theme/teaching-theme
+customTheme: _assets/theme/teaching-theme
 verticalSeparator: --v--
 transition: fade
 ---

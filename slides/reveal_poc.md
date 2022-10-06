@@ -6,6 +6,7 @@ customTheme: _assets/theme/teaching-theme
 verticalSeparator: --v--
 revealOptions: {
   transition: 'none',
+  center: false,
   slideNumber: false,
   overview: true,
   autoPlayMedia: true,
@@ -17,7 +18,8 @@ revealOptions: {
 
 ---
 
-### Given state
+<section data-vertical-align-top> Given state </>
+
 - [github/opengisch/talks](github/opengisch/talks) repository with html
 - [github/opengisch/public-talks](github/opengisch/public-talks) repository with some MARP prototyping
 

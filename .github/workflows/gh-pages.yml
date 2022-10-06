@@ -44,9 +44,10 @@ jobs:
       - name: Post-process to make it work on gh-pages
         run: |
           sudo chown -R ${USER}:${USER} html
+          git pull
           find html -type f -name '*.html' -exec \
             sed -i 's/"\/_assets\//".\/_assets\//g' html/qfield.html \;
-          git pull
+          touch html/.nojekyll
 
       - name: Push to gh-pages branches
         run: ghp-import -p ${PWD}/html

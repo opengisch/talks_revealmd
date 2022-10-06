@@ -39,7 +39,7 @@ jobs:
             /slides \
             --static /html \
             --assets-dir assets \
-            --static-dirs _assets/theme
+            --static-dirs _assets/theme,assets
 
       - name: Post-process to make it work on gh-pages
         run: |

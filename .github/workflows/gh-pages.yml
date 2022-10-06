@@ -29,8 +29,8 @@ jobs:
       - name: Build
         run: |
           docker run --rm \
-            -v $(PWD)/slides:/slides \
-            -v $(PWD)/html:/html \
+            -v ${PWD}/slides:/slides \
+            -v ${PWD}/html:/html \
             webpronl/reveal-md:latest \
             /slides \
             --static /html \

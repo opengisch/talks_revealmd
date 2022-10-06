@@ -13,6 +13,11 @@
   --r-heading-font: "futura-pt", Helvetica, Arial, sans-serif;
 }
 
+/* assign the r-heading size to h5 because it's not done by reveal.js theme */
+h5 {
+  font-size: var(--r-heading5-size);
+}
+
 /* color classes used for texts */
 
 .blue {

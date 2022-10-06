@@ -51,7 +51,7 @@ revealOptions: {
 
 ---
 
-### Reveal.js
+## Reveal.js
 
 <div class="container">
 <div class="col">

@@ -6,7 +6,6 @@ customTheme: _assets/theme/teaching-theme
 verticalSeparator: --v--
 revealOptions: {
   transition: 'none',
-  center: false,
   slideNumber: false,
   overview: true,
   autoPlayMedia: true,
@@ -18,10 +17,12 @@ revealOptions: {
 
 ---
 
-<section data-vertical-align-top> Given state </>
+<section data-vertical-align-top> 
+## Given state
 
 - [github/opengisch/talks](github/opengisch/talks) repository with html
 - [github/opengisch/public-talks](github/opengisch/public-talks) repository with some MARP prototyping
+</section>
 
 ---
 
@@ -116,6 +117,8 @@ looks like this:
 1. Third `item`
 1. Fourth item
 
+---
+
 ### Tables
 
 <div class="container">
@@ -152,6 +155,12 @@ looks like this:
 - Update Presentations
 - Running Repository
 - Change Repository to official talks
+
+---
+
+## Problems 
+- Talker Notes
+- {width="100%" height="30%"}
 
 ---
 

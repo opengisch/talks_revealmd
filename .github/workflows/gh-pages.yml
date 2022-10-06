@@ -37,6 +37,6 @@ jobs:
             --assets-dir assets \
             --static-dirs _assets/theme
 
-      - name: Debug 2
-        run: |
-          tree
+      - name: Push to gh-pages branches
+        run: ghp-import -p ${PWD}/html
+

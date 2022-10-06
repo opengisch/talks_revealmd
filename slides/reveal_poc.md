@@ -4,7 +4,12 @@ description: PoC for reveal.js
 theme: theme/teaching-theme.css
 customTheme: _assets/theme/teaching-theme
 verticalSeparator: --v--
-transition: fade
+revealOptions: {
+  transition: 'none',
+  slideNumber: false,
+  overview: true,
+  autoPlayMedia: true,
+}
 ---
 
 # Modernize the Talks repository
@@ -79,6 +84,36 @@ Note: Though there is no big winner, we decided to go on with Reveal.js. The VS 
 
 ---
 
+### Standard markdown stuff
+
+---
+
+#### Quotes
+
+```md
+> This is quoted text.
+```
+looks like this:
+> This is quoted text.
+
+---
+
+#### Lists with formated text
+
+```md
+1. **First** *item*
+1. Second Item
+1. Third `item`
+1. Fourth item
+```
+
+looks like this:
+
+1. **First** *item*
+1. Second Item
+1. Third `item`
+1. Fourth item
+
 ### Tables
 
 <div class="container">
@@ -102,8 +137,6 @@ Note: Though there is no big winner, we decided to go on with Reveal.js. The VS 
 | list B | Contains B elements |
 
 </div>
-
----
 
 ---
 

@@ -20,7 +20,8 @@
 # Modernize the Talks repository
 <h3 class=dark>And it's challenges</h3>
 </script></section><section  data-markdown><script type="text/template">
-### Given state
+<section data-vertical-align-top> Given state </>
+
 - [github/opengisch/talks](github/opengisch/talks) repository with html
 - [github/opengisch/public-talks](github/opengisch/public-talks) repository with some MARP prototyping
 </script></section><section  data-markdown><script type="text/template">
@@ -180,7 +181,7 @@ looks like this:
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"transition":"none","slideNumber":false,"overview":true,"autoPlayMedia":true}, queryOptions);
+      var options = extend(defaultOptions, {"transition":"none","center":false,"slideNumber":false,"overview":true,"autoPlayMedia":true}, queryOptions);
     </script>
 
 

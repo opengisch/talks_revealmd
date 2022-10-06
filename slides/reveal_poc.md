@@ -187,10 +187,10 @@ looks like this:
 #### Override styles
 
 ```html
-<h1 style="color:pink">Just use CSS</h1>
+<h1 style="color:yellow !important;">Just use CSS</h1>
 ```
 looks like:
-<h1 style="color:yellow">Just use CSS</h1>
+<h1 style="color:yellow !important;;">Just use CSS</h1>
 
 ---
 

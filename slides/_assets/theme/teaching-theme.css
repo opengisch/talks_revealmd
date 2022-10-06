@@ -3,22 +3,16 @@
 @import 'base-theme.css';
 
 :root {
-    --r-background-color: var(--opengisch-green);
+    --r-background-color: var(--opengisch-dark);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--opengisch-light) !important;
-    -webkit-text-stroke: 2px var(--opengisch-dark);
+    color: var(--opengisch-green) !important;
+    -webkit-text-stroke: 2px var(--opengisch-light);
     text-align: left !important;
 }
 
-p {
-    color: var(--opengisch-dark) !important;    
+p, ul, tr, td, div {
+    color: var(--opengisch-light) !important;    
     text-align: left !important;
-}
-
-ul {
-    color: var(--opengisch-dark) !important;
-    list-style-type: circle;  
-
 }

@@ -8,7 +8,7 @@ revealOptions: {
   transition: 'none',
   slideNumber: false,
   overview: true,
-  autoPlayMedia: true,
+  autoPlayMedia: true
 }
 ---
 
@@ -17,16 +17,16 @@ revealOptions: {
 
 ---
 
-<section data-vertical-align-top> 
 ## Given state
+----
 
 - [github/opengisch/talks](github/opengisch/talks) repository with html
 - [github/opengisch/public-talks](github/opengisch/public-talks) repository with some MARP prototyping
-</section>
 
 ---
 
-### Goal
+##  Goal
+----
 
 - Decide for a way to go
 - Set up a working repository
@@ -36,17 +36,19 @@ revealOptions: {
 ---
 
 ## MARP
-
+----
 <div class="container">
 <div class="col">
-<h3> Pros </h3 >
+
+#### Pros 
 
 - Markdown (of course)
 - Integration VS Code
 - Easy to build
 </div>
 <div class="col">
-<h3> Cons </h3 >
+
+#### Cons
 
 - Limitations of styling (needs lots of CSS)
 - Small community
@@ -54,13 +56,14 @@ revealOptions: {
 
 ---
 
-## Reveal.js
+## Reveal.js 
+##### (with reveal-md)
+----
 
 <div class="container">
 <div class="col">
-<h3> Pros</h3>
 
-(with reveal-md)
+####  Pros
 
 - Markdown (of course)
 - Integration VS Code
@@ -68,41 +71,44 @@ revealOptions: {
 - Big community
 </div>
 <div class="col">
-<h3> Cons</h3>
 
-(with reveal-md)
+#### Cons
 
 - Limitations of styling (needs lots of CSS)
 </div>
 
 ---
 
-### Reveal.js
+## Decition for Reveal.js
+----
 
 Note: Though there is no big winner, we decided to go on with Reveal.js. The VS Code integration is nicer, the community is bigger and one can influence more the backend.
 
 ---
 
-### Let's see some examples
+## Standard markdown stuff
 
 ---
 
-### Standard markdown stuff
+### Quotes
+----
 
----
-
-#### Quotes
+**Markdown:**
 
 ```md
 > This is quoted text.
 ```
-looks like this:
+
+**Looks like**
+
 > This is quoted text.
 
 ---
 
-#### Lists with formated text
+### Lists with formated text
+----
 
+**Markdown:**
 ```md
 1. **First** *item*
 1. Second Item
@@ -110,7 +116,7 @@ looks like this:
 1. Fourth item
 ```
 
-looks like this:
+**Looks like**
 
 1. **First** *item*
 1. Second Item
@@ -120,10 +126,12 @@ looks like this:
 ---
 
 ### Tables
+----
 
 <div class="container">
 <div class="col">
-<h3> In md </h3>
+
+**Markdown**
 
 ```{md}
 | item   | description         |
@@ -134,7 +142,8 @@ looks like this:
 
 </div>
 <div class="col">
-<h3> Rendered </h3>
+
+**Looks like**
 
 | item   | description         |
 |--------|---------------------|
@@ -145,22 +154,78 @@ looks like this:
 
 ---
 
+### Hacky stuff
+
+---
+
+### Override style
+----
+
+**HTML:**
+```html
+<h1 style="color:purple !important;">QField</h1>
+```
+
+**Looks like**
+
+<h1 style="color:purple !important;">QField</h1>
+
+---
+
+### Background Image
+----
+
+**HTML:**
+```html
+<!-- .slide: data-background="./assets/customer.JPG"-->
+```
+
+**Looks like this**
+
+---
+
+### Multiple Columns
+----
+
+**HTML:**
+
+```html
+<div class="container">
+<div class="col">column 1</div>
+<div class="col">column 2</div>
+<div class="col">column 3</div>
+</div>
+```
+
+**Looks like this**
+
+<div class="container">
+<div class="col">column 1</div>
+<div class="col">column 2</div>
+<div class="col">column 3</div>
+</div>
+
+---
+
 ## Final state
-- Running Repository
-- README.md for "Starters"
+- Running repository
+- Theme templates for teaching and pitches with PoC presentations
+- README.md for "starters"
 
 ---
 
 ## To dos
-- Update Presentations
-- Running Repository
-- Change Repository to official talks
+- Checkout plugins
+- Finetune themes
+- Finalize README.md
+- Update presentations
+- Change repository to official talks
 
 ---
 
-## Problems 
-- Talker Notes
-- {width="100%" height="30%"}
+## Plugins 
+- For speaker notes
+- Things like `{width="100%" height="30%"}`
 
 ---
 

@@ -19,7 +19,7 @@ revealOptions: {
 
 ---
 
-![](./assets/social_distancing_love_os.png){width="100%" height="30%"}
+![](./assets/social_distancing_love_os.png)
 
 #### Open source Geoninjas
 ##### Made in Switzerland
@@ -40,7 +40,7 @@ revealOptions: {
 
 ---
 
-![](./assets/qfield_device_landscape.png){width="100%" height="30%"}
+![](./assets/qfield_device_landscape.png)
 
 #### The mobile data collection app for QGIS
 

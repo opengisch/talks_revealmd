@@ -20,14 +20,14 @@
 # Modernize the Talks repository
 <h3 class=dark>And it's challenges</h3>
 </script></section><section  data-markdown><script type="text/template">
-<section data-vertical-align-top> 
 ## Given state
+----
 
 - [github/opengisch/talks](github/opengisch/talks) repository with html
 - [github/opengisch/public-talks](github/opengisch/public-talks) repository with some MARP prototyping
-</section>
 </script></section><section  data-markdown><script type="text/template">
-### Goal
+##  Goal
+----
 
 - Decide for a way to go
 - Set up a working repository
@@ -35,29 +35,32 @@
 - Accessability: easy entry point, documentation
 </script></section><section  data-markdown><script type="text/template">
 ## MARP
-
+----
 <div class="container">
 <div class="col">
-<h3> Pros </h3 >
+
+#### Pros 
 
 - Markdown (of course)
 - Integration VS Code
 - Easy to build
 </div>
 <div class="col">
-<h3> Cons </h3 >
+
+#### Cons
 
 - Limitations of styling (needs lots of CSS)
 - Small community
 </div>
 </script></section><section  data-markdown><script type="text/template">
-## Reveal.js
+## Reveal.js 
+##### (with reveal-md)
+----
 
 <div class="container">
 <div class="col">
-<h3> Pros</h3>
 
-(with reveal-md)
+####  Pros
 
 - Markdown (of course)
 - Integration VS Code
@@ -65,31 +68,36 @@
 - Big community
 </div>
 <div class="col">
-<h3> Cons</h3>
 
-(with reveal-md)
+#### Cons
 
 - Limitations of styling (needs lots of CSS)
 </div>
 </script></section><section  data-markdown><script type="text/template">
-### Reveal.js
+## Decition for Reveal.js
+----
 
 <aside class="notes"><p>Though there is no big winner, we decided to go on with Reveal.js. The VS Code integration is nicer, the community is bigger and one can influence more the backend.</p>
 </aside></script></section><section  data-markdown><script type="text/template">
-### Let's see some examples
+## Standard markdown stuff
 </script></section><section  data-markdown><script type="text/template">
-### Standard markdown stuff
-</script></section><section  data-markdown><script type="text/template">
-#### Quotes
+### Quotes
+----
+
+**Markdown:**
 
 ```md
 > This is quoted text.
 ```
-looks like this:
+
+**Looks like**
+
 > This is quoted text.
 </script></section><section  data-markdown><script type="text/template">
-#### Lists with formated text
+### Lists with formated text
+----
 
+**Markdown:**
 ```md
 1. **First** *item*
 1. Second Item
@@ -97,7 +105,7 @@ looks like this:
 1. Fourth item
 ```
 
-looks like this:
+**Looks like**
 
 1. **First** *item*
 1. Second Item
@@ -105,10 +113,12 @@ looks like this:
 1. Fourth item
 </script></section><section  data-markdown><script type="text/template">
 ### Tables
+----
 
 <div class="container">
 <div class="col">
-<h3> In md </h3>
+
+**Markdown**
 
 ```{md}
 | item   | description         |
@@ -119,7 +129,8 @@ looks like this:
 
 </div>
 <div class="col">
-<h3> Rendered </h3>
+
+**Looks like**
 
 | item   | description         |
 |--------|---------------------|
@@ -128,18 +139,66 @@ looks like this:
 
 </div>
 </script></section><section  data-markdown><script type="text/template">
+### Hacky stuff
+</script></section><section  data-markdown><script type="text/template">
+### Override style
+----
+
+**HTML:**
+```html
+<h1 style="color:purple !important;">QField</h1>
+```
+
+**Looks like**
+
+<h1 style="color:purple !important;">QField</h1>
+</script></section><section  data-markdown><script type="text/template">
+### Background Image
+----
+
+**HTML:**
+```html
+<!-- .slide: data-background="./assets/customer.JPG"-->
+```
+
+**Looks like this**
+</script></section><section  data-markdown><script type="text/template">
+### Multiple Columns
+----
+
+**HTML:**
+
+```html
+<div class="container">
+<div class="col">column 1</div>
+<div class="col">column 2</div>
+<div class="col">column 3</div>
+</div>
+```
+
+**Looks like this**
+
+<div class="container">
+<div class="col">column 1</div>
+<div class="col">column 2</div>
+<div class="col">column 3</div>
+</div>
+</script></section><section  data-markdown><script type="text/template">
 ## Final state
-- Running Repository
-- README.md for "Starters"
+- Running repository
+- Theme templates for teaching and pitches with PoC presentations
+- README.md for "starters"
 </script></section><section  data-markdown><script type="text/template">
 ## To dos
-- Update Presentations
-- Running Repository
-- Change Repository to official talks
+- Checkout plugins
+- Finetune themes
+- Finalize README.md
+- Update presentations
+- Change repository to official talks
 </script></section><section  data-markdown><script type="text/template">
-## Problems 
-- Talker Notes
-- {width="100%" height="30%"}
+## Plugins 
+- For speaker notes
+- Things like `{width="100%" height="30%"}`
 </script></section><section  data-markdown><script type="text/template">
 ## Happy markdown 🎉
 </script></section></div>

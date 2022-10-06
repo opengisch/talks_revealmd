@@ -18,6 +18,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Debug dependencies
+        run: |
+          sudo apt install -y tree
+
+      - name: Debug 1
+        run: |
+          tree
+
       - name: Build
         run: |
           docker run --rm \
@@ -29,8 +37,6 @@ jobs:
             --assets-dir assets \
             --static-dirs _assets/theme
 
-      - name: Debug
+      - name: Debug 2
         run: |
-          sudo apt install -y tree
           tree
-

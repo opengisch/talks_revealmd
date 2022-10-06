@@ -48,47 +48,47 @@ revealOptions: {
 
 ![](./assets/qfield_canvas.png)
 
-#### Minimalist UI
+##### Minimalist UI
 
 ---
 
 ![](./assets/efficient.png)
 
 
-#### Beautiful cartography
+##### Beautiful cartography
 
 ---
 
 ![](./assets/powerful.png)
 
 
-#### Powerful tools
+##### Powerful tools
 
 ---
 
 ![](./assets/efficient.png)
 
 
-#### Efficient interaction
+##### Efficient interaction
 
 ---
 
 ![](./assets/integrated.png)
 
 
-#### Beneficial integrations
+##### Beneficial integrations
 
 ---
 
 ![](./assets/qfield_canvas.png)
 
-#### Professional hardware
+##### Professional hardware
 
 ---
 
 ![](./assets/cloud.png)
 
-#### QFieldCloud
+##### QFieldCloud
 
 ---
 
@@ -281,11 +281,11 @@ revealOptions: {
 
 ---
 
-<!-- .slide: data-background="./assets/taivaskero.jpg"-->
+<!-- .slide: data-background="./assets/dungong.png"-->
 
 
-### Taivaskero
-#### 400k downloads
+### Diversified Dugong
+#### 500k downloads
 #### 110k monthly users
 
 ---

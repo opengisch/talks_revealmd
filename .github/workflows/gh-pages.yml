@@ -41,6 +41,12 @@ jobs:
             --assets-dir assets \
             --static-dirs _assets/theme
 
+      - name: Post-process to make it work on gh-pages
+        run: |
+          sudo chown -R ${USER}:${USER} html
+          find html -type f -name '*.html' -exec \
+            sed -i 's/"\/_assets\//".\/_assets\//g' html/qfield.html \;
+
       - name: Push to gh-pages branches
         run: ghp-import -p ${PWD}/html
 

@@ -42,7 +42,7 @@ version of the presention, simply do:
 ```{bash}
 git clone git@github.com:opengisch/talks_revealmd.git
 ```
-3. Browse relevant existing content in the `slides` folder.
+3. Browse relevant existing content in the [`slides`](slides) folder.
 4. Optionally create a new local branch named after your new presentation;
    especially if you already know that the content will be relevant for re-use.
 ```{bash}

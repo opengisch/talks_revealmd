@@ -46,8 +46,10 @@ git checkout -b <my-example-presentation>
 ```
 5. Create a new markdown file, `<my-example-presentation>.md`.
 6. If slide material is interesting for others, you can publish your
-   local presentation into this online repository. For this, make a pull
-   request on GitHub.
+   local presentation into this online repository. If you wish that your
+   presentation is available on the **landing page** throught automated
+   rending via GitHub actions, then make a pull request into the master branch
+   on GitHub.
 
 Now you are ready to draft and present your slides.
 

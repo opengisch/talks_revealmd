@@ -49,9 +49,10 @@ git clone git@github.com:opengisch/talks_revealmd.git
 git checkout -b <my-example-presentation>
 ```
 5. Create a new markdown file, `<my-example-presentation>.md`.
-6. If slide material is interesting for others, you can publish your
-   local presentation into this online repository. If you wish that your
-   presentation is available on the **landing page** throught automated
+6. If slide material is interesting for others, you can publish your local
+   presentation into this online repository. If you wish that your presentation
+   is available on the [**landing
+   page**](https://opengisch.github.io/talks_revealmd/) throught automated
    rending via GitHub actions, then make a pull request into the master branch
    on GitHub.
 

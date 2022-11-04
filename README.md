@@ -1,8 +1,10 @@
 ## Overview
 
-The goal of this repo is to template elegant slides with opengis.ch themes.
-It allows you to write with simple markdown syntax, so no need to get
-your hands into HTML, CSS, and JS.
+The goal of this repo is to template elegant slides with
+[**opengis.ch**](https://www.opengis.ch/) themes, based on the awesome
+[`reveal-md`](https://www.npmjs.com/package/reveal-md) plugin. So you can
+quickly draft presentations with simple markdown syntax, without getting into
+HTML, CSS, and JS.
 
 * [Overview](#overview)
 * [Creating and editing presentations on the fly](#creating-and-editing-presentations-on-the-fly)

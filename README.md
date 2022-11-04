@@ -38,11 +38,16 @@ version of the presention, simply do:
 ```{bash}
 git clone git@github.com:opengisch/talks_revealmd.git
 ```
-3. Create a new local branch named after your new presentation
+3. Browse relevant existing content in the `slides` folder.
+4. Optionally create a new local branch named after your new presentation;
+   especially if you already know that the content will be relevant for re-use.
 ```{bash}
 git checkout -b <my-example-presentation>
 ```
-4. Create a new markdown file, `<my-example-presentation>.md`.
+5. Create a new markdown file, `<my-example-presentation>.md`.
+6. If slide material is interesting for others, you can publish your
+   local presentation into this online repository. For this, make a pull
+   request on GitHub.
 
 Now you are ready to draft and present your slides.
 
@@ -59,20 +64,28 @@ There is also a browser presentation modus, which is triggered by the
 Start with adding a header section in YAML syntax to the `.md` file, for
 example:
 
+Use `pitch-theme` for heavy-titled slides for pitches like this:
+<image of marcos slide>.
+
 ```{yaml}
 ---
 title: QField
 description: QField Feature presentation
-theme: white
-customTheme: themes/pitch-theme
+theme: theme/pitch-theme.css
+customTheme: _assets/theme/pitch-theme
+verticalSeparator: --v--
+transition: none
+revealOptions: {
+  transition: 'none',
+  slideNumber: false,
+  overview: true,
+  autoPlayMedia: true,
+}
 ---
 ```
 
-Use `pitch-theme` for heavy-titled slides for pitches like this:
-<image of marcos slide>
-
 Use `teaching-theme` for slimmer font for workshop and teaching presentations.
-<image of teaching slide>
+<image of teaching slide>.
 
 ## Tips and Tricks
 

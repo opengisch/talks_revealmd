@@ -176,3 +176,9 @@ Build the slides with
 ```{bash}
 reveal-md slides/qfield.md
 ```
+
+## Credits
+
+- [reveal.js](https://revealjs.com/) made Hakim El Hattab and contributors
+- [reveal-md](https://github.com/webpro/reveal-md) made by Lars Kappert and
+  contributors

@@ -24,6 +24,8 @@ preview functionality in VSCode.
 
 ![](doc/img/reveal-md_code-plugin.png)
 
+### Live-preview of slides via VSCode plugin
+
 The `VSCode Reveal` plugin supports live-preview of the slides. You can
 just click on the plugin on the left bar, which features a slide overview and
 currently four toolbar buttons at the top. If you split the editor right and
@@ -31,7 +33,7 @@ click on `"Revealjs: Show presentation by side"`, then you can instantly
 navigate through the current snapshot of your presentation. To work on a local
 version of the presention, simply do:
 
-1. Install VSCode with the extension vscode-reveal
+1. Install VSCode with the extension `vscode-reveal`
 2. Clone this repository, to re-use existing contents in the default branch:
 ```{bash}
 git clone git@github.com:opengisch/talks_revealmd.git
@@ -43,6 +45,14 @@ git checkout -b <my-example-presentation>
 4. Create a new markdown file, `<my-example-presentation>.md`.
 
 Now you are ready to draft and present your slides.
+
+### Browser presentation modus
+
+There is also a browser presentation modus, which is triggered by the
+`<Revealjs: Export in HTML>` icon (html5 logo).
+
+![](doc/img/reveal-md_code-view-html.png)
+
 
 ### Header section of the markdown presentation
 

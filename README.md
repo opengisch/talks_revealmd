@@ -56,7 +56,7 @@ Now you are ready to draft and present your slides.
 ### Browser presentation modus
 
 There is also a browser presentation modus, which is triggered by the
-`<Revealjs: Export in HTML>` icon (html5 logo).
+`<Revealjs: Open presentation in browser>` icon (vertical up-pointing arrow).
 
 <img src="doc/img/reveal-md_code-view-html.png" height="60%" width="60%" >
 

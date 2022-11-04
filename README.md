@@ -71,7 +71,8 @@ Start with adding a header section in YAML syntax to the `.md` file, for
 example:
 
 Use `pitch-theme` for heavy-titled slides for pitches like this:
-<image of marcos slide>.
+
+<img src="doc/img/opengisch_theme-pitch.png" height="60%" width="60%" >
 
 ```{yaml}
 ---

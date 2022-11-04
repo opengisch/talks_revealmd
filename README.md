@@ -9,7 +9,6 @@ HTML, CSS, and JS.
 All available talks are compiled
 [**here**](https://opengisch.github.io/talks_revealmd/).
 
-* [Overview](#overview)
 * [Creating and editing presentations on the fly](#creating-and-editing-presentations-on-the-fly)
    * [Live-preview of slides via VSCode plugin](#live-preview-of-slides-via-vscode-plugin)
    * [Browser presentation modus](#browser-presentation-modus)

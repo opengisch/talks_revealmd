@@ -51,7 +51,7 @@ Now you are ready to draft and present your slides.
 There is also a browser presentation modus, which is triggered by the
 `<Revealjs: Export in HTML>` icon (html5 logo).
 
-![](doc/img/reveal-md_code-view-html.png)
+![](doc/img/reveal-md_code-view-html.png | width=100)
 
 
 ### Header section of the markdown presentation

@@ -8,6 +8,8 @@ HTML, CSS, and JS.
 
 * [Overview](#overview)
 * [Creating and editing presentations on the fly](#creating-and-editing-presentations-on-the-fly)
+   * [Live-preview of slides via VSCode plugin](#live-preview-of-slides-via-vscode-plugin)
+   * [Browser presentation modus](#browser-presentation-modus)
    * [Header section of the markdown presentation](#header-section-of-the-markdown-presentation)
 * [Tips and Tricks](#tips-and-tricks)
    * [Overriding font styling](#overriding-font-styling)
@@ -16,6 +18,7 @@ HTML, CSS, and JS.
    * [Handling multiple lines](#handling-multiple-lines)
    * [Having two or more equal sized columns](#having-two-or-more-equal-sized-columns)
 * [Build the slides in your custom IDE](#build-the-slides-in-your-custom-ide)
+* [Credits](#credits)
 
 ## Creating and editing presentations on the fly
 

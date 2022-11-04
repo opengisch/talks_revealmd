@@ -36,7 +36,8 @@ click on `"Revealjs: Show presentation by side"`, then you can instantly
 navigate through the current snapshot of your presentation. To work on a local
 version of the presention, simply do:
 
-1. Install VSCode with the extension `vscode-reveal`
+1. Install VSCode with the extension
+   [`vscode-reveal`](https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal)
 2. Clone this repository, to re-use existing contents in the default branch:
 ```{bash}
 git clone git@github.com:opengisch/talks_revealmd.git

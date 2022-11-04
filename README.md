@@ -91,7 +91,23 @@ revealOptions: {
 ```
 
 Use `teaching-theme` for slimmer font for workshop and teaching presentations.
-<image of teaching slide>.
+
+<img src="doc/img/opengisch_theme-teaching.png" height="60%" width="60%" >
+
+
+```{yaml}
+title: Reveal PoC
+description: PoC for reveal.js
+theme: theme/teaching-theme.css
+customTheme: _assets/theme/teaching-theme
+verticalSeparator: --v--
+revealOptions: {
+  transition: 'none',
+  slideNumber: false,
+  overview: true,
+  autoPlayMedia: true
+}
+```
 
 ## Tips and Tricks
 

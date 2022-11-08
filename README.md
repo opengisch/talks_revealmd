@@ -10,9 +10,11 @@ All available talks are compiled
 [**here**](https://opengisch.github.io/talks_revealmd/).
 
 * [Creating and editing presentations on the fly](#creating-and-editing-presentations-on-the-fly)
-   * [Live-preview of slides via VSCode plugin](#live-preview-of-slides-via-vscode-plugin)
-   * [Browser presentation modus](#browser-presentation-modus)
-   * [Header section of the markdown presentation](#header-section-of-the-markdown-presentation)
+   * [Get repository data](#get-repository-data)
+   * [Work with VSCode](#work-with-vscode)
+      * [Live-preview of slides via VSCode plugin](#live-preview-of-slides-via-vscode-plugin)
+      * [Browser presentation modus](#browser-presentation-modus)
+      * [Header section of the markdown presentation](#header-section-of-the-markdown-presentation)
 * [Tips and Tricks](#tips-and-tricks)
    * [Overriding font styling](#overriding-font-styling)
    * [Images](#images)
@@ -24,43 +26,49 @@ All available talks are compiled
 
 ## Creating and editing presentations on the fly
 
-The easiest way is to locally draft presentations in markdown and use the
-preview functionality in VSCode.
+### Get repository data
 
-![](doc/img/reveal-md_code-plugin.png)
+To work on a local version of the presention, simply do:
 
-### Live-preview of slides via VSCode plugin
-
-The `VSCode Reveal` plugin supports live-preview of the slides. You can
-just click on the plugin on the left bar, which features a slide overview and
-currently four toolbar buttons at the top. If you split the editor right and
-click on `"Revealjs: Show presentation by side"`, then you can instantly
-navigate through the current snapshot of your presentation. To work on a local
-version of the presention, simply do:
-
-1. Install VSCode with the extension
-   [`vscode-reveal`](https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal)
-2. Clone this repository, to re-use existing contents in the default branch:
+1. Clone this repository, to re-use existing contents in the default branch:
 ```{bash}
 git clone git@github.com:opengisch/talks_revealmd.git
 ```
-3. Browse relevant existing content in the [`slides`](slides) folder.
-4. Optionally create a new local branch named after your new presentation;
+2. Browse relevant existing content in the [`slides`](slides) folder.
+3. Optionally create a new local branch named after your new presentation;
    especially if you already know that the content will be relevant for re-use.
 ```{bash}
 git checkout -b <my-example-presentation>
 ```
-5. Create a new markdown file, `<my-example-presentation>.md`.
-6. If slide material is interesting for others, you can publish your local
+4. Create a new markdown file, `<my-example-presentation>.md`.
+5. If slide material is interesting for others, you can publish your local
    presentation into this online repository. If you wish that your presentation
    is available on the [**landing
    page**](https://opengisch.github.io/talks_revealmd/) throught automated
    rending via GitHub actions, then make a pull request into the master branch
    on GitHub.
 
+### Work with VSCode
+
+The easiest way is to locally draft presentations in markdown and use the
+preview functionality in VSCode.
+
+![](doc/img/reveal-md_code-plugin.png)
+
+Install VSCode with the extension
+[`vscode-reveal`](https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal)
+
+#### Live-preview of slides via VSCode plugin
+
+The `VSCode Reveal` plugin supports live-preview of the slides. You can
+just click on the plugin on the left bar, which features a slide overview and
+currently four toolbar buttons at the top. If you split the editor right and
+click on `"Revealjs: Show presentation by side"`, then you can instantly
+navigate through the current snapshot of your presentation.
+
 Now you are ready to draft and present your slides.
 
-### Browser presentation modus
+#### Browser presentation modus
 
 There is also a browser presentation modus, which is triggered by the
 `<Revealjs: Open presentation in browser>` icon (vertical up-pointing arrow).
@@ -68,7 +76,7 @@ There is also a browser presentation modus, which is triggered by the
 <img src="doc/img/reveal-md_code-view-html.png" height="60%" width="60%" >
 
 
-### Header section of the markdown presentation
+#### Header section of the markdown presentation
 
 Start with adding a header section in YAML syntax to the `.md` file, for
 example:

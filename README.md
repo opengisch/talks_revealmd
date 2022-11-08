@@ -1,12 +1,20 @@
 ## Overview
 
-The goal of this repo is to template elegant slides with opengis.ch themes.
-It allows you to write with simple markdown syntax, so no need to get
-your hands into HTML, CSS, and JS.
+The goal of this repo is to template elegant slides with
+[**opengis.ch**](https://www.opengis.ch/) themes, based on the awesome
+[`reveal-md`](https://www.npmjs.com/package/reveal-md) plugin. So you can
+quickly draft presentations with simple markdown syntax, without getting into
+HTML, CSS, and JS.
 
-* [Overview](#overview)
+All available talks are compiled
+[**here**](https://opengisch.github.io/talks_revealmd/).
+
 * [Creating and editing presentations on the fly](#creating-and-editing-presentations-on-the-fly)
-   * [Header section of the markdown presentation](#header-section-of-the-markdown-presentation)
+   * [Get repository data](#get-repository-data)
+   * [Work with VSCode](#work-with-vscode)
+      * [Live-preview of slides via VSCode plugin](#live-preview-of-slides-via-vscode-plugin)
+      * [Browser presentation modus](#browser-presentation-modus)
+      * [Header section of the markdown presentation](#header-section-of-the-markdown-presentation)
 * [Tips and Tricks](#tips-and-tricks)
    * [Overriding font styling](#overriding-font-styling)
    * [Images](#images)
@@ -14,53 +22,104 @@ your hands into HTML, CSS, and JS.
    * [Handling multiple lines](#handling-multiple-lines)
    * [Having two or more equal sized columns](#having-two-or-more-equal-sized-columns)
 * [Build the slides in your custom IDE](#build-the-slides-in-your-custom-ide)
+* [Credits](#credits)
 
 ## Creating and editing presentations on the fly
+
+### Get repository data
+
+To work on a local version of the presention, simply do:
+
+1. Clone this repository, to re-use existing contents in the default branch:
+```{bash}
+git clone git@github.com:opengisch/talks_revealmd.git
+```
+2. Browse relevant existing content in the [`slides`](slides) folder.
+3. Optionally create a new local branch named after your new presentation;
+   especially if you already know that the content will be relevant for re-use.
+```{bash}
+git checkout -b <my-example-presentation>
+```
+4. Create a new markdown file, `<my-example-presentation>.md`.
+5. If slide material is interesting for others, you can publish your local
+   presentation into this online repository. If you wish that your presentation
+   is available on the [**landing
+   page**](https://opengisch.github.io/talks_revealmd/) throught automated
+   rending via GitHub actions, then make a pull request into the master branch
+   on GitHub.
+
+### Work with VSCode
 
 The easiest way is to locally draft presentations in markdown and use the
 preview functionality in VSCode.
 
 ![](doc/img/reveal-md_code-plugin.png)
 
+Install VSCode with the extension
+[`vscode-reveal`](https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal)
+
+#### Live-preview of slides via VSCode plugin
+
 The `VSCode Reveal` plugin supports live-preview of the slides. You can
 just click on the plugin on the left bar, which features a slide overview and
 currently four toolbar buttons at the top. If you split the editor right and
 click on `"Revealjs: Show presentation by side"`, then you can instantly
-navigate through the current snapshot of your presentation. To work on a local
-version of the presention, simply do:
-
-1. Install VSCode with the extension vscode-reveal
-2. Clone this repository, to re-use existing contents in the default branch:
-```{bash}
-git clone git@github.com:opengisch/talks_revealmd.git
-```
-3. Create a new local branch named after your new presentation
-```{bash}
-git checkout -b <my-example-presentation>
-```
-4. Create a new markdown file, `<my-example-presentation>.md`.
+navigate through the current snapshot of your presentation.
 
 Now you are ready to draft and present your slides.
 
-### Header section of the markdown presentation
+#### Browser presentation modus
+
+There is also a browser presentation modus, which is triggered by the
+`<Revealjs: Open presentation in browser>` icon (vertical up-pointing arrow).
+
+<img src="doc/img/reveal-md_code-view-html.png" height="60%" width="60%" >
+
+
+#### Header section of the markdown presentation
 
 Start with adding a header section in YAML syntax to the `.md` file, for
 example:
+
+Use `pitch-theme` for heavy-titled slides for pitches like this:
+
+<img src="doc/img/opengisch_theme-pitch.png" height="60%" width="60%" >
 
 ```{yaml}
 ---
 title: QField
 description: QField Feature presentation
-theme: white
-customTheme: themes/pitch-theme
+theme: theme/pitch-theme.css
+customTheme: _assets/theme/pitch-theme
+verticalSeparator: --v--
+transition: none
+revealOptions: {
+  transition: 'none',
+  slideNumber: false,
+  overview: true,
+  autoPlayMedia: true,
+}
 ---
 ```
 
-Use `pitch-theme` for heavy-titled slides for pitches like this:
-<image of marcos slide>
-
 Use `teaching-theme` for slimmer font for workshop and teaching presentations.
-<image of teaching slide>
+
+<img src="doc/img/opengisch_theme-teaching.png" height="60%" width="60%" >
+
+
+```{yaml}
+title: Reveal PoC
+description: PoC for reveal.js
+theme: theme/teaching-theme.css
+customTheme: _assets/theme/teaching-theme
+verticalSeparator: --v--
+revealOptions: {
+  transition: 'none',
+  slideNumber: false,
+  overview: true,
+  autoPlayMedia: true
+}
+```
 
 ## Tips and Tricks
 
@@ -73,7 +132,7 @@ do this manually with CSS inlining:
 <h1 style="color:pink">QField</h1>
 ```
 
-Classes used in <span> (not only)
+You can also style accordingly text parts with `<span>` tags.
 
 ### Images
 
@@ -149,3 +208,9 @@ Build the slides with
 ```{bash}
 reveal-md slides/qfield.md
 ```
+
+## Credits
+
+- [reveal.js](https://revealjs.com/) made Hakim El Hattab and contributors
+- [reveal-md](https://github.com/webpro/reveal-md) made by Lars Kappert and
+  contributors

@@ -124,7 +124,7 @@ do this manually with CSS inlining:
 <h1 style="color:pink">QField</h1>
 ```
 
-Classes used in <span> (not only)
+You can also style accordingly text parts with `<span>` tags.
 
 ### Images
 

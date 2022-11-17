@@ -1,8 +1,8 @@
 ---
-title: Model Baker Pitch 03
-description: QGIS Model Baker Journey in Pictures as Pitch
-theme: theme/pitch-theme.css
-customTheme: _assets/theme/pitch-theme
+title: Model Baker Pitch 02
+description: QGIS Model Baker Journey in Pictures
+theme: theme/teaching-theme.css
+customTheme: _assets/theme/teaching-theme
 verticalSeparator: --v--
 transition: none
 revealOptions: {
@@ -19,13 +19,13 @@ revealOptions: {
 
 ### Abstract
 
-**Model Baker** ist ein **QGIS Plugin**, mit dem sich Projekte aus einem **INTERLIS** Modell erzeugen lassen. **Model Baker** verwendet **ili2db**, um ein Modell in eine **physische Datenbank** zu importieren und zusätzliche Metainformationen, um **Legende, Formulare, Relationen und vieles mehr** automatisch zu konfigurieren. Es ist **Open Source** und frei verfügbar.
+**Model Baker** is a **QGIS plugin** that can be used to create projects from an **INTERLIS** model. **Model Baker** uses **ili2db** to import a model into a **physical database** and additional meta information to automatically configure **layer tree, forms, relations and more**. It is **open source** and freely available.
 
 ---
 
-### INTERLIS Geodatenmodel
+### INTERLIS Geodatamodel
 
-<!-- INTERLIS Geodatenmodelle lokal oder auf dem Repository. -->
+<!-- We have **INTERLIS** INTERLIS geodata models locally or on an online repository.-->
 
 ```
 MODEL Wildruhezonen_LV95_V2_1 (de)
@@ -73,26 +73,24 @@ VERSION "2020-04-21"  =
     END RoutennetzWildruhezone;
 
     ASSOCIATION Wildruhezone_TeilobjektWildruhezone =
-      WRZ_Teilobjekt -- {1..*} Wildruhezone_Teilobjekt;
-      WRZ -<#> {1} Wildruhezone;
-    END Wildruhezone_TeilobjektWildruhezone;
-  END Wildruhezonen;
+      WRZ_Teilobjekt -- {1..*} Wildruhmodel
 END Wildruhezonen_LV95_V2_1.
 ```
 
 ---
 
-### Model Baker findet Infos
-<!-- .slide: data-background="./assets/modelbaker_wizard.png"-->
+### Model Baker gets the info
 
-<!-- Model Baker findet die relevanten Informationen und erstellt mithilfe von ili2db die Datenbank.-->
+![wizard](./assets/modelbaker_wizard.png)
+
+<!-- **Model Baker** finds the relevant information and creates the database using **ili2db**.-->
 
 ---
 
-### QGIS Projekt wird generiert
+### QGIS Project is generated
 
-<!-- Datenbank und INTERLIS Metadaten werden analysiert, um ein QGIS Projekt mit Legende, Formularen, Relationen etc. automatisch zu generieren.-->
+<!-- Database and INTERLIS metadata are analyzed to automatically configure a QGIS project with layertree, forms, relations and much more.-->
 
-<!-- .slide: data-background="./assets/modelbaker_projekt.png"-->
+![projekt](./assets/modelbaker_projekt.png)
 
 

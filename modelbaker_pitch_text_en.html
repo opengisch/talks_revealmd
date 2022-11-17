@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>Model Baker Pitch 03</title>
+    <title>Model Baker Pitch 01</title>
     <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="stylesheet" href="./dist/reset.css" />
     <link rel="stylesheet" href="./dist/reveal.css" />
-    <link rel="stylesheet" href="./_assets/theme/pitch-theme.css" id="theme" />
+    <link rel="stylesheet" href="./_assets/theme/teaching-theme.css" id="theme" />
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
 
 
@@ -21,12 +21,12 @@
 </script></section><section  data-markdown><script type="text/template">
 ### Abstract
 
-**Model Baker** ist ein **QGIS Plugin**, mit dem sich Projekte aus einem **INTERLIS** Modell erzeugen lassen. **Model Baker** verwendet **ili2db**, um ein Modell in eine **physische Datenbank** zu importieren und zusätzliche Metainformationen, um **Legende, Formulare, Relationen und vieles mehr** automatisch zu konfigurieren. Es ist **Open Source** und frei verfügbar.
+**Model Baker** is a **QGIS plugin** that can be used to create projects from an **INTERLIS** model. **Model Baker** uses **ili2db** to import a model into a **physical database** and additional meta information to automatically configure **layer tree, forms, relations and more**. It is **open source** and freely available.
 </script></section><section  data-markdown><script type="text/template">
-### INTERLIS Geodatenmodel
+### INTERLIS Geodatamodel
 
-<!-- INTERLIS Geodatenmodelle lokal oder auf dem Repository. -->
-
+We have **INTERLIS** INTERLIS geodata models locally or on an online repository.
+</script></section><section  data-markdown><script type="text/template">
 ```
 MODEL Wildruhezonen_LV95_V2_1 (de)
 VERSION "2020-04-21"  =
@@ -80,16 +80,17 @@ VERSION "2020-04-21"  =
 END Wildruhezonen_LV95_V2_1.
 ```
 </script></section><section  data-markdown><script type="text/template">
-### Model Baker findet Infos
-<!-- .slide: data-background="./assets/modelbaker_wizard.png"-->
+### Model Baker Plugin
 
-<!-- Model Baker findet die relevanten Informationen und erstellt mithilfe von ili2db die Datenbank.-->
+**Model Baker** finds the relevant information and creates the database using **ili2db**.
 </script></section><section  data-markdown><script type="text/template">
-### QGIS Projekt wird generiert
+<!-- .slide: data-background="./assets/modelbaker_wizard.png" -->
+</script></section><section  data-markdown><script type="text/template">
+### QGIS Projekt
 
-<!-- Datenbank und INTERLIS Metadaten werden analysiert, um ein QGIS Projekt mit Legende, Formularen, Relationen etc. automatisch zu generieren.-->
-
-<!-- .slide: data-background="./assets/modelbaker_projekt.png"-->
+Database and INTERLIS metadata are analyzed to automatically configure a QGIS project with layertree, forms, relations and much more.
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background="./assets/modelbaker_projekt.png" -->
 
 
 </script></section></div>

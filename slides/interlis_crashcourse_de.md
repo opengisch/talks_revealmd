@@ -16,7 +16,7 @@ revealOptions: {
 <!-- .slide: data-background="./assets/interlis_crashcourse.png" -->
 
 
-<h1 style="color:#93bfe5 !important;">INTERLIS CRASHKURS</h1>
+<h1 style="-webkit-text-stroke: 2px var(--opengisch-dark) !important; color: lightgray !important; font-size:4.5em !important; text-align: center !important;">INTERLIS CRASHKURS</h1>
 
 ---
 
@@ -47,9 +47,18 @@ revealOptions: {
 
 # Interlis Repositories und Tools (15 Minuten)
 
-# Fragen (15 Minuten)
+# Fragen (15 Minuten) 🙋
 
 -->
+
+---
+
+### Ziele des Crashkurses
+
+- Wissen was INTERLIS ist und wie es angewendet wird.
+- Ein Modell lesen zu können und sich darin zurechtfinden. 
+
+--v--
 
 ### Programm
 
@@ -66,47 +75,145 @@ revealOptions: {
 - Vererbungen
 - Aufzählungen und Kataloge
 - Repositorien (Schweizer Geodatenmodelle)
-- 🙋
 
 ---
+
+Kurze Einführung...
 
 ## Was ist INTERLIS überhaupt?
 
----
+--v--
 
-- INTER Land Information Systems
-- A data description language with special consideration of **geodata**
-- Object oriented and extendable
-- System neutral (platform independent)
-- Readable by humans and machines
-- Model driven approach
+- **INTER** **L**and **I**nfomations **S**ysteme
+- Eine konzeptionelle Beschreibungsprache, mit spezieller Berücksichtigung von **Geodaten**
+- Lesbar von Menschen und Maschinen
+- Objektorientiert und Erweiterbar
+- Systemneutral (Plattformunabhängig)
+- Strikte Trennung zwischen Modell und Transferdaten
 
-<!-- [INTERLIS](https://www.interlis.ch/) (INTER Land Information Systems) is a data description language and a transfer format with special consideration of geodata. INTERLIS offers the possibility to describe spatial data precisely, to integrate them in conformity with the model and to exchange them easily among different users. INTERLIS has been bindingly anchored in Swiss geoinformation legislation since 2008. Since INTERLIS has been object-oriented since version 2, it can be extended very easily. This means that, for example, the federal government defines a model that the cantonal authorities can derive and extend according to their needs. 
+<!-- 
+**INTER** **L**and **I**nfomations **S**ysteme -> dient der Zusammenarbeit von (Geographischen) Informations Systemen. Alle beteiligten Systeme sollen die Konzepte kennen, die für die Zusammenarbeit wichtig sind. 
 
-- Supports Geometries
-- Since version 2 object oriented - perfect for data exchange between authorities. This is important since it's anchored in Swiss geoinformation legislation since 2008 to use INTERLIS.
-- Perfect for the discussion between ITs and thematic specialists
-- Strict division between the transfer part and the modeling part
+Es umfasst also eine **konzeptionelle Beschreibungssprache**, welche die Realwelt beschreibt. Ist also lesbar von Menschen wie von Maschinen und ideal als Grundlage zur Diskusion zwischen IT-Nerds und thematischen Fachleuten.
+
+Objektorientiert seit Version 2 (gängige version ist 2.3 obwohl 2.4 die aktuelle ist). Die Tatsache, dass es Objektorientiert ist führt dazu, dass es ideal ist für den Datenaustausch zwischen Bundesstellen / Kantonsstellen etc.
 -->
 
+--v--
+
+### Modelldatei und Transferdatei
+
+Das Modell (die Struktur) ist geschrieben in INTERLIS und gespeichert als `.ili` Datei.
+
+Die Daten sind geschrieben in XML (gemäss Modell) und gespeichert als `.xtf` Datei (früher `.itf`).
+
+--v--
+
+### Wieso du INTERLIS mögen könntest
+
+Du hast dein Datenbankschema in der Hosentasche.
+
+Es ist "einfach" lesbar und sehr präzise.
+
+Dank den Tools ist es einfach in deiner Datenbank und in QGIS zu implementieren und die Daten zu validieren.
+
+<!-- 
+Es gibt bestimmt genügend Gründe, INTERLIS nicht zu mögen.
+
+Verglichen zu SQL Scripts ist es systemunabhängig und einfach zu erweitern. -->
+
 ---
 
-## Model file and transfer data file
+Aber beginnen wir von vorn...
+## Schreiben des erstes Modells
 
-The model is defined in INTERLIS language and stored in an `.ili` file.
+--v--
 
-The data is in xml (considering the model) and stored as an `.xtf` file (former `.itf`).
+### Ausgangslage
 
----
+Clemens ist nicht glücklich. Bei jedem Datenaustausch muss er sich ransetzen und die Daten **überprüfen** und **bereinigen**.
 
-## Why you could like INTERLIS
+- Werte sind nicht konsistent
+- Einträge sind teilweise doppelt
 
-You have your database schema in your poket. 
+Er schickt mir ein [Datensatz als CSV](./assets/interlis_crashcourse/gebaeude_clean.csv).
 
-It's easy readable and precice.
+--v--
 
-Thanks to the nice tools, it's easy to implement in your database and in QGIS.
+Lasst uns dafür ein supereasy Modell schreiben...
+### Basic INTERLIS Syntax
 
-<!--  Compared to e.g. SQL Scripts you can simply extend it. -->
+--v--
+
+![structure](./assets/interlis_model_structure.png){ style="display: block; margin: 0 auto" }
+
+--v--
+
+### MODEL
+
+<!-- echte syntax kodierung zeigen oder eben nicht? -->
+```NONE
+INTERLIS 2.3;
+
+MODEL Wildruhezonen_LV95_V2_1 (de)
+
+AT "https://models.geo.admin.ch/BAFU/"
+
+VERSION "2020-04-21"  =
+
+
+
+  [...]
+
+
+
+END Wildruhezonen_LV95_V2_1.
+```
+
+--v--
+
+### TOPIC
+<!-- echte syntax kodierung zeigen oder eben nicht? -->
+
+```NONE
+INTERLIS 2.3;
+
+MODEL Wildruhezonen_LV95_V2_1 (de)
+
+AT "https://models.geo.admin.ch/BAFU/"
+
+VERSION "2020-04-21"  =
+
+  TOPIC Wildruhezonen =
+
+    [...]
+
+  END Wildruhezonen;
+
+END Wildruhezonen_LV95_V2_1.
+```
+
+--v--
+
+### CLASS
+<!-- echte syntax kodierung zeigen oder eben nicht? -->
+
+<code>
+INTERLIS 2.3;
+
+MODEL Wildruhezonen_LV95_V2_1 (de)
+
+AT "https://models.geo.admin.ch/BAFU/"
+
+VERSION "2020-04-21"  =
+
+  **TOPIC Wildruhezonen =**
+
+    [...]
+
+  **END Wildruhezonen;**
+
+END Wildruhezonen_LV95_V2_1.
+</code>
 
 ---

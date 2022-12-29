@@ -30,3 +30,6 @@ div {
   color: var(--opengisch-light) !important;
   text-align: left !important;
 }
+li {
+  margin-top: 0.5em !important;
+}

@@ -1,0 +1,46 @@
+INTERLIS 2.3;
+
+MODEL Gebaeudeinventar_V1_3 (de)
+
+AT "https://models.opengis.ch"
+
+VERSION "2023-01-19" =
+  IMPORTS GeometryCHLV95_V1;
+
+  TOPIC Gebaeude = 
+
+    DOMAIN 
+        Kanton = (
+            AG,AI,AR,BE,BL,BS,FR,GE,GL,GR,JU,LU,NE,NW,OW,SG,SH,SO,SZ,TG,TI,UR,VD,VS,ZG,ZH
+        );
+
+    CLASS Gebaeude =
+
+        AdrID : MANDATORY TEXT*8;
+        EGID : MANDATORY TEXT*8;
+        Kantonskuerzel : MANDATORY Kanton;
+        Grundstuecksnummer : MANDATORY 0 .. 99999;
+        Strasse : TEXT*200;
+        Nummer : 0 .. 999;
+        PLZ : 0 .. 9999;
+        Ort : MANDATORY TEXT*200;
+        Name : TEXT;
+        Koordinaten : MANDATORY GeometryCHLV95_V1.Coord2;
+        Status : MANDATORY TEXT;
+        Bauperiode : MANDATORY TEXT;
+        Flaeche : 0.00 .. 99999.99;
+        Geschosse : 0 .. 999;
+        Zivilschutzraum : MANDATORY BOOLEAN;
+        Heizung : TEXT;
+        Datum_Heizung : INTERLIS.XMLDate;
+
+        UNIQUE AdrID;
+        UNIQUE EGID;
+        SET CONSTRAINT WHERE DEFINED (Heizung) :
+            DEFINED (Datum_Heizung);
+
+    END Gebaeude;
+
+  END Gebaeude;
+
+END Gebaeudeinventar_V1_3.

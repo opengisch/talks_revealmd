@@ -1,0 +1,27 @@
+INTERLIS 2.3;
+
+MODEL OekoGebaeudeinventar_V1 (de)
+
+AT "https://models.opengis.ch"
+
+VERSION "2023-01-19" =
+  IMPORTS Gebaeudeinventar_V1_4;
+
+  TOPIC Gebaeude EXTENDS Gebaeudeinventar_V1_4.Gebaeude= 
+
+    CLASS Gebaeude (EXTENDED) =
+        Stromversorgung: TEXT;
+        Datum_Stromversorgung : INTERLIS.XMLDate;
+        Isolation: TEXT;
+        Datum_Isolation : INTERLIS.XMLDate;
+
+        EnsprichtStandard: BOOLEAN;
+
+        SET CONSTRAINT WHERE EnsprichtStandard :
+            Bauperiode != "Vor 1919";
+
+    END Gebaeude;
+
+  END Gebaeude;
+
+END OekoGebaeudeinventar_V1.

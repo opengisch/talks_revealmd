@@ -1,0 +1,36 @@
+INTERLIS 2.3;
+
+MODEL Gebaeudeinventar_V1 (de)
+
+AT "https://models.opengis.ch"
+
+VERSION "2023-01-19" =
+
+  TOPIC Gebaeude = 
+
+    CLASS Gebaeude =
+    
+        AdrID : TEXT;
+        EGID : TEXT;
+        Kantonskuerzel : TEXT;
+        Grundstuecksnummer : TEXT;
+        Strasse : TEXT;
+        Nummer : TEXT;
+        PLZ : TEXT;
+        Ort : TEXT;
+        Name : TEXT;
+        EKoordinate : TEXT;
+        NKoordinate : TEXT;
+        Status : TEXT;
+        Bauperiode : TEXT;
+        Flaeche : TEXT;
+        Geschosse : TEXT;
+        Zivilschutzraum : TEXT;
+        Heizung : TEXT;
+        Datum_Heizung : TEXT;
+
+    END Gebaeude;
+
+  END Gebaeude;
+
+END Gebaeudeinventar_V1.

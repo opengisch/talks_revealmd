@@ -22,6 +22,14 @@ h6 {
   text-align: left !important;
 }
 
+h4,h5,h6{
+  text-transform: none !important;
+}
+
+code {
+  size: 1em !important;
+}
+
 p,
 ul,
 tr,

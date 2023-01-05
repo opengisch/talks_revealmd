@@ -85,7 +85,7 @@ revealOptions: {
 
 Kurze Einführung...
 
-## Was ist INTERLIS überhaupt?
+# Was ist INTERLIS überhaupt?
 
 --v--
 
@@ -106,7 +106,7 @@ Objektorientiert seit Version 2 (gängige version ist 2.3 obwohl 2.4 die aktuell
 
 --v--
 
-### Modelldatei und Transferdatei
+## Modelldatei und Transferdatei
 
 Das Modell (die Struktur) ist geschrieben in INTERLIS und gespeichert als `.ili` Datei.
 
@@ -114,7 +114,7 @@ Die Daten sind geschrieben in XML (gemäss Modell) und gespeichert als `.xtf` Da
 
 --v--
 
-### Wieso du INTERLIS mögen könntest
+## Wieso du INTERLIS mögen könntest
 
 Du hast dein Datenbankschema in der Hosentasche.
 
@@ -130,11 +130,11 @@ Verglichen zu SQL Scripts ist es systemunabhängig und einfach zu erweitern. -->
 ---
 
 Aber beginnen wir von vorn...
-## Schreiben des erstes Modells
+# Schreiben des erstes Modells
 
 --v--
 
-### Ausgangslage ✉️
+## Ausgangslage ✉️
 
 ![clemens](./assets/interlis_crashcourse/images/clemens.png){ style="height:8em"}
 
@@ -150,7 +150,7 @@ Er schickt mir ein [Datensatz als CSV](./assets/interlis_crashcourse/gebaeude_cl
 --v--
 
 Lasst uns dafür ein supereasy Modell schreiben...
-### INTERLIS Basics
+## INTERLIS Basics
 
 --v--
 
@@ -158,7 +158,7 @@ Lasst uns dafür ein supereasy Modell schreiben...
 
 --v--
 
-#### MODEL
+### MODEL
 
 <!-- echte syntax kodierung zeigen oder eben nicht? -->
 ```NONE
@@ -181,7 +181,7 @@ END <modellname_und_version>.
 
 --v--
 
-#### MODEL (aus realem Modell)
+### MODEL (aus realem Modell)
 
 ```NONE
 INTERLIS 2.3;
@@ -203,7 +203,7 @@ END Wildruhezonen_LV95_V2_1.
 
 --v--
 
-#### TOPIC
+### TOPIC
 <!-- echte syntax kodierung zeigen oder eben nicht? -->
 
 ```NONE
@@ -217,7 +217,7 @@ END Wildruhezonen_LV95_V2_1.
 
 --v--
 
-#### TOPIC (aus realem Modell)
+### TOPIC (aus realem Modell)
 
 ```NONE
 INTERLIS 2.3;
@@ -239,7 +239,7 @@ END Wildruhezonen_LV95_V2_1.
 
 --v--
 
-#### CLASS und ATTRIBUTES
+### CLASS und ATTRIBUTES
 
 <!-- echte syntax kodierung zeigen oder eben nicht? -->
 ```none
@@ -254,7 +254,7 @@ END Wildruhezonen_LV95_V2_1.
 
 --v--
 
-#### CLASS und ATTRIBUTES (aus realem Modell)
+### CLASS und ATTRIBUTES (aus realem Modell)
 
 ```none
 INTERLIS 2.3;
@@ -288,7 +288,7 @@ END Wildruhezonen_LV95_V2_1.
 
 --v--
 
-#### Das erste Modell 📝
+### Das erste Modell 📝
 Schreiben wir das Modell für Clemens' CSV File
 
 <!--
@@ -307,11 +307,11 @@ Gebaeudeinventar_V1
 ---
 
 Machen wir unser Modell nützlich mit...
-## Datentypen und Bedingungen (Constraints)
+# Datentypen und Bedingungen
 
 --v--
 
-### Ausgangslage ✉️
+## Ausgangslage ✉️
 
 ![clemens](./assets/interlis_crashcourse/images/clemens.png){ style="height:8em"}
 
@@ -322,11 +322,11 @@ Um nur korrekte Daten zu erlauben, möchten wir die Möglichkeiten ***einschrän
 --v--
 
 Geben wir die Wertbereiche vor mit...
-### INTERLIS-Datentypen
+## INTERLIS-Datentypen
 
 --v--
 
-#### Zeichenketten
+### Zeichenketten
 
 **Uneingeschränkter Text**
 
@@ -354,7 +354,7 @@ Website : URI;
 
 --v--
 
-#### Numerische Werte
+### Numerische Werte
 
 **Eingeschränkte Nummer**
 
@@ -370,7 +370,7 @@ Flaeche : 0.00 .. 2000.00;
 
 --v--
 
-#### Boolean (Wahr/Falsch, 0/1, On/Off)
+### Boolean (Wahr/Falsch, 0/1, On/Off)
 
 `
 Zivilschutzraum : BOOLEAN;
@@ -378,7 +378,7 @@ Zivilschutzraum : BOOLEAN;
 
 --v--
 
-#### Datum und Zeit
+### Datum und Zeit
 
 **Jahr - GregorianYear (1582 .. 2999)**
 
@@ -403,7 +403,7 @@ Datum_Heizung : INTERLIS.XMLDateTime "2000-01-01T00:00:00.000" ..
 
 --v--
 
-#### Aufzählungen
+### Aufzählungen
 
 Enumerations müssen wir selbst definieren:
 ```none
@@ -419,7 +419,7 @@ Fassadenfarbe : Farbe;
 
 --v--
 
-#### Datentypen im Modell 📝
+### Datentypen im Modell 📝
 Passen wir unser Modell an...
 
 <!--
@@ -443,11 +443,11 @@ Evtl. können wir es auch noch testen mit Model Baker (je nach Zeit)
 --v--
 
 Werfen wir noch einen Blick auf die...
-### Koordinaten
+## Koordinaten
 
 --v--
 
-#### IST Zustand
+### IST Zustand
 
 <!-- aktuell sind die Koordinaten so gespeichert-->
 
@@ -462,13 +462,13 @@ END Gebaeude;
 
 --v--
 
-#### Und es heisst doch...
+### Und es heisst doch...
 
 *INTERLIS ist eine konzeptionelle Beschreibungsprache, mit spezieller Berücksichtigung von **Geodaten**.*
 
 --v--
 
-#### Wir möchten es lieber irgedwie so...
+### Wir möchten es lieber irgedwie so...
 
 ```none
 CLASS Gebaeude =
@@ -493,7 +493,7 @@ END Gebaeude;
 
 --v--
 
-#### Definiert im Basismodell des Bundes `GeometryCHLV95_V1`
+### Definiert im Basismodell des Bundes `GeometryCHLV95_V1`
 
 ```none
     Coord2 = COORD
@@ -504,7 +504,7 @@ END Gebaeude;
 
 --v--
 
-#### Somit verwenden wir es so
+### Somit verwenden wir es so
 
 ```none
 CLASS Gebaeude =
@@ -516,17 +516,17 @@ END Gebaeude;
 
 --v--
 
-#### Linien und Polygone
+### Linien und Polygone
 
 ```none
-      Linie = POLYLINE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2;
+  Linie = POLYLINE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2;
 
-      Polygon = SURFACE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS > 0.001;
+  Polygon = SURFACE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS > 0.001;
 ```
 
 --v--
 
-#### Koordinaten im Modell 📝
+### Koordinaten im Modell 📝
 
 Passen wir unser Modell an...
 
@@ -541,12 +541,12 @@ Gebaeudeinventar_V1_2
 <!-- Ein Grossteil von Bedingungen haben wir ja bereits gemacht mit dem definieren von Wertebereichen und Formaten. Dennoch gibt es noch mehr Möglichkeiten.-->
 
 Führen wir Bedingungen ein mit...
-### INTERLIS-Constraints 
+## INTERLIS-Constraints 
 (einer Auswahl)
 
 --v--
 
-#### Pfilchtfelder (NOT NULL)
+### Pfilchtfelder (NOT NULL)
 
 `
 Status : MANDATORY TEXT;
@@ -566,7 +566,7 @@ END Gebaeude;
 
 --v--
 
-#### Einmaligkeit
+### Einmaligkeit
 
 ```none
 CLASS Gebaeude =
@@ -582,7 +582,7 @@ END Gebaeude;
 
 --v--
 
-#### Kombinationen von Bedingungen
+### Kombinationen von Bedingungen
 ```none
 CLASS Gebaeude =
 
@@ -597,7 +597,7 @@ END Gebaeude;
 --v--
 
 
-#### Bedingungen unter Bedingungen 🤯
+### Bedingungen unter Bedingungen 🤯
 ```none
 CLASS Gebaeude =
 
@@ -612,7 +612,7 @@ END Gebaeude;
 
 --v--
 
-#### Bedingungen ausserhalb der Klasse
+### Bedingungen ausserhalb der Klasse
 
 ```none
 CLASS Gebaeude =
@@ -634,7 +634,7 @@ END;
 
 --v--
 
-#### Bedingungen im Modell 📝
+### Bedingungen im Modell 📝
 
 Passen wir unser Modell an...
 
@@ -653,11 +653,11 @@ Gebaeudeinventar_V1_3
 ---
 
 Verbessern wir unser Modell mit...
-## Beziehungen und Referenzen
+# Beziehungen und Referenzen
 
 --v--
 
-### Ausgangslage ✉️
+## Ausgangslage ✉️
 
 ![clemens](./assets/interlis_crashcourse/images/clemens.png){ style="height:8em"}
 
@@ -676,7 +676,7 @@ Ein Gebäude kann mehrere Adressen haben. Eine Adresse hingegen muss einem Gebä
 
 --v--
 
-### Was wir brauchen
+## Was wir brauchen
 
 - Neue "Tabelle" für Adressen
 - Eine Verknüpfung zwischen Gebäude und Adressen
@@ -696,11 +696,11 @@ Gebaeudeinventar_V1_4
 --v--
 
 Verknüpfen wir die Klassen mit...
-### Beziehungen
+## Beziehungen
 
 --v--
 
-#### ASSOCIATION
+### ASSOCIATION
 
 <!-- echte syntax kodierung zeigen oder eben nicht? -->
 ```none
@@ -715,7 +715,7 @@ END <association_name>;
 
 --v--
 
-#### ASSOCIATION (aus realem Modell)
+### ASSOCIATION (aus realem Modell)
 ```none
 
 ASSOCIATION RoutennetzWildruhezone =
@@ -730,7 +730,7 @@ END RoutennetzWildruhezone;
 
 --v--
 
-#### Beziehungsstärken
+### Beziehungsstärken
 
 - Assoziation `--`: Beziehung zwischen unabhängigen Objekten
 
@@ -742,7 +742,7 @@ END RoutennetzWildruhezone;
 
 --v--
 
-#### Beziehungsattribute
+### Beziehungsattribute
 
 ```none
 
@@ -759,7 +759,7 @@ END RoutennetzWildruhezone;
 --v--
 
 
-#### Beziehung im Modell 📝
+### Beziehung im Modell 📝
 
 Passen wir unser Modell an...
 
@@ -771,13 +771,13 @@ Gebaeudeinventar_V1_4
 
 --v--
 
-### Alternativer Ansatz mit STRUCTURES
+## Alternativer Ansatz mit STRUCTURES
 
 Wenn eine Adresse nicht eigenständig existieren kann würde vielleicht Sinn machen, die Adressen in ein "Datentyp" zu packen.
 
 --v--
 
-#### STRUCTURE
+### STRUCTURE
 
 <!-- echte syntax kodierung zeigen oder eben nicht? -->
 ```none
@@ -793,7 +793,7 @@ END <structure_name>;
 
 --v--
 
-#### STRUCTURE (aus realem Modell)
+### STRUCTURE (aus realem Modell)
 
 <!-- gibt vielleicht noch ein besseres -->
 ```none
@@ -808,7 +808,7 @@ END <structure_name>;
 
 --v--
 
-#### Referenz auf STRUCTURE
+### Referenz auf STRUCTURE
 
 <!-- gibt vielleicht noch ein besseres -->
 ```none
@@ -829,7 +829,7 @@ Oder eben mit mehreren Adressen mit `BAG {1..*} OF `
 
 --v--
 
-#### STRUCTURES im Modell 📝
+### STRUCTURES im Modell 📝
 
 Passen wir unser Modell an...
 
@@ -842,11 +842,11 @@ Gebaeudeinventar_V1_5
 ---
 
 Erweitern wir unser Modell mit...
-## Vererbungen
+# Vererbungen
 
 --v--
 
-### Ausgangslage ✉️
+## Ausgangslage ✉️
 
 ![clemens](./assets/interlis_crashcourse/images/clemens.png){ style="height:8em"}
 
@@ -868,18 +868,18 @@ Dazu möchte er das aktuelle Modell nutzen, doch fehlen einige Attribute und Bed
 
 --v--
 
-### Was wir brauchen
+## Was wir brauchen
 
 - Eine verbesserte `Gebaeude` Klasse 
 
 --v--
 
 Durchführen einer...
-### Klassenerweiterung
+## Klassenerweiterung
 
 --v--
 
-#### Erweitern eines Modells
+### Erweitern eines Modells
 
 Um eine Klasse erweitern zu können müssen wir zuerst das Modell erweitern:
 
@@ -899,7 +899,7 @@ MODEL <name_erweitertes_modell> (<sprache>)  =
 
 --v--
 
-#### Erweitern einer Klasse mit Attributen
+### Erweitern einer Klasse (1)
 
 ```NONE
 
@@ -913,7 +913,9 @@ MODEL <name_erweitertes_modell> (<sprache>)  =
 
 ```
 
-oder auch
+--v--
+
+### Erweitern einer Klasse (2)
 
 ```NONE
 
@@ -929,7 +931,7 @@ oder auch
 
 --v--
 
-#### Erweiterung einer Klasse (aus realem Modell)
+### Erweiterung einer Klasse (aus realem Modell)
 
 ```NONE
 
@@ -951,7 +953,7 @@ MODEL GL_Wildruhezonen_V1 (de)  =
 
 --v--
 
-#### Vererbungen im Modell 📝
+### Vererbungen im Modell 📝
 
 Erstellen wir ein erweitertes Modell...
 
@@ -963,7 +965,7 @@ OekoGebaeudeinventar_V1
 
 --v--
 
-#### Typen von Klassen
+### Typen von Klassen
 
 <!-- Übrigens gibt es nicht nur das (EXTENDED sondern auch FINAL und ABSTRACT) -->
 
@@ -974,11 +976,11 @@ OekoGebaeudeinventar_V1
 ---
 
 Nutzung von...
-## Katalogen
+# Katalogen
 
 --v--
 
-### Ausgangslage ✉️
+## Ausgangslage ✉️
 
 ![clemens](./assets/interlis_crashcourse/images/clemens.png){ style="height:8em"}
 
@@ -986,21 +988,21 @@ Clemens hörte schon viel von Katalogen. Macht es Sinn diese in unserem Modell z
 
 --v--
 
-### Was sind Kataloge?
+## Was sind Kataloge?
 
 - Dynamische Wertelisten, die wie Aufzählungen (`ENUMERATIONS`) verwendet werden können.
 - Kataloge sind Daten "gehören" aber zur Struktur (Modell)
 
 --v--
 
-#### Vorteile von Katalogen
+### Vorteile von Katalogen
 - Sind bezüglich Inhalt von der eigentlichen Modelldefinition unabhängig.
 - Können mehrsprachig sein
 - Können zusätzlich zum Wert auch noch Beschreibung etc. enthalten
 
 --v--
 
-#### Nachteil von Katalogen
+### Nachteil von Katalogen
 - Sind komplex
 
 *Deshalb wird hier auch nur oberflächlich auf Kataloge eingegangen. Wichtig ist, dass man versteht, was Kataloge sind und wie sie verwendet werden.*
@@ -1009,7 +1011,7 @@ Clemens hörte schon viel von Katalogen. Macht es Sinn diese in unserem Modell z
 
 --v--
 
-#### Struktur eines Katalogs
+### Struktur eines Katalogs
 
 Ableitungen von `CatalogueObjects_V1` erweitern die abstrakten Klassen und Strukturen
 
@@ -1034,7 +1036,7 @@ END Bestimmungen_CatRef;
 
 --v--
 
-#### Referenzen auf Kataloge
+### Referenzen auf Kataloge
 
 ```none
 CLASS Wildruhezone_Teilobjekt =
@@ -1046,7 +1048,7 @@ END Wildruhezone_Teilobjekt;
 
 --v--
 
-#### Kataloge im Modell 📝
+### Kataloge im Modell 📝
 
 Wir erstellen ein neues Katalog-Topic in unserem Modell für "Heizung".
 
@@ -1063,22 +1065,22 @@ Gebaeudeinventar_V1_6
 ---
 
 Und zum Schluss noch...
-## Interlis Repositories und Tools
+# Interlis Repositories und Tools
 
 --v--
 
-### Arbeiten mit INTERLIS
+## Arbeiten mit INTERLIS
 ![workflow](./assets/interlis_crashcourse/images/interlis_workflow.png)
 (Graphik von landnetwork.ch)
 
 --v--
 
-### ili2 Tools
+## ili2 Tools
 made by Eisenhut Informatik 
 
 --v--
 
-#### Compiler ili2c
+### Compiler ili2c
 
 Der INTERLIS-Compiler prüft ein INTERLIS-Modell, ob die Konstrukte der Sprache INTERLIS korrekt angewendet wurden. 
 
@@ -1086,28 +1088,28 @@ Der INTERLIS-Compiler prüft ein INTERLIS-Modell, ob die Konstrukte der Sprache 
 
 --v--
 
-#### ili2db und ili2fme
+### ili2db und ili2fme
 ili2pg, ili2gpkg und ili2fgdb sind Programme, die eine physische Datenbank (PostgrSQL/PostGIS, GeoPackage oder ESRI FileGDB) aus einem INTERLIS-Modell erzeugen oder eine INTERLIS-Transferdatei importieren / exportieren.
 
 --v--
 
-#### ilivalidator
+### ilivalidator
 ilivalidator prüft, ob Daten im INTERLIS 1 und 2 Transferformat (*.itf/*.xtf) mit dem zugehörigen Modell (*.ili) übereinstimmen. 
 
 --v--
 
-### Schweizer Geodaten Repositories
+## Schweizer Geodaten Repositories
 
 --v--
 
-#### ilimodels.xml
+### ilimodels.xml
 - Basiert auf dem Modell `IliRepository09`
 - Enthält Objekte der Klasse `ModelMetadata`, in denen ein Modellname und ein **Dateipfad** definiert ist
 - Die **Dateien** befinden sich in demselben Repository
 
 --v--
 
-#### ilisites.xml
+### ilisites.xml
 
 - Basiert auf dem Modell `IliSite09`.
 - Enthält Objekte der Klasse `SiteMetadata`, in denen **Pfade** zu anderen Repositories definiert sind
@@ -1123,7 +1125,7 @@ ilivalidator prüft, ob Daten im INTERLIS 1 und 2 Transferformat (*.itf/*.xtf) m
 
 ---
 
-#### Das wars. Vielen Dank.
+### Das wars...
 #### Web: www.opengis.ch
 #### Email: david@opengis.ch
 #### Github: github.com/signedav

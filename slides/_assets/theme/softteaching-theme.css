@@ -27,7 +27,11 @@ h4,h5,h6{
 }
 
 code {
-  size: 1em !important;
+    color: rgba(255, 255, 255, 0.87) !important;
+    font-size: 1.7em !important;
+    line-height: 1.2em !important;
+    background-color: rgba(0, 0, 0, 0.726) !important;
+    align-self: left !important;
 }
 
 p,

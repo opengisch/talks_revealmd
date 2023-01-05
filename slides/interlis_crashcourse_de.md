@@ -37,8 +37,6 @@ revealOptions: {
 # Pause (15 Minuten)
 
 # Beziehungen und Referenzen (10 Minuten)
-- ASSOCIATIONS und STRUCTURES
-- BAG OF und LIST OF
 
 # Vererbungen (20 Minuten)
 

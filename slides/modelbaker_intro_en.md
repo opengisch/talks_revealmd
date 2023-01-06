@@ -1,6 +1,6 @@
 ---
-title: INTERLIS in 15
-description: INTERLIS Syntax in 15 minutes
+title: MODELBAKER in 5
+description: MODELBAKER in 5 minutes
 theme: theme/teaching-theme.css
 customTheme: _assets/theme/teaching-theme
 verticalSeparator: --v--

@@ -21,6 +21,10 @@ revealOptions: {
 
 **Model Baker** ist ein **QGIS Plugin**, mit dem sich Projekte aus einem **INTERLIS** Modell erzeugen lassen. **Model Baker** verwendet **ili2db**, um ein Modell in eine **physische Datenbank** zu importieren und zusätzliche Metainformationen, um **Legende, Formulare, Relationen und vieles mehr** automatisch zu konfigurieren. Es ist **Open Source** und frei verfügbar.
 
+<aside class="notes">
+Add some test notes for speaker view.
+</aside>
+
 ---
 
 ### INTERLIS Geodatenmodel

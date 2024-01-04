@@ -15,38 +15,55 @@
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">
+      <div class="slides">
+        <section data-markdown data-separator="\r?\n---\r?\n" data-separator-vertical="--v--">
+          <textarea data-template>
+            
 
 # QField
 
 <h4 class=blue>Because data is outside</h4>
-</script></section><section  data-markdown><script type="text/template">
+
+---
+
 ![](./assets/social_distancing_love_os.png)
 
 #### Open source Geoninjas
 
 ##### Made in Switzerland
-</script></section><section  data-markdown><script type="text/template">
+
+---
+
 <h2 class=blue>Working with QField as a Land Surveyor</h2>
-</script></section><section  data-markdown><script type="text/template">
+
+---
+
 <!-- .slide: data-background="./assets/qgis_advanced_bee_farming.png"-->
 
 <h2 class=blue>Comfortably prepare the work on your QGIS desktop</h2>
-</script></section><section  data-markdown><script type="text/template">
+
+---
+
 <!-- .slide: data-background="./assets/qfield_on_field.jpg"-->
 
 <h2 class=blue>Efficiently work on your GIS data outdoor</h2>
-</script></section><section  data-markdown><script type="text/template">
+
+---
+
 <h2 class=blue>Why QField?</h2>
-</script></section><section  data-markdown><script type="text/template">
+
+---
+
 ### Opening geodata
 
 - Vectors type
 - Rasters type
-</script></section><section ><section data-markdown><script type="text/template">
+
+---
+
 ### Powerful Feature Forms
 
-</script></section><section data-markdown><script type="text/template">
+--v--
 
 #### Supercool Forms
 
@@ -54,48 +71,52 @@
   <source src="./assets/video/form_widgets.webm" type="video/mp4">
 </video>
 
-</script></section><section data-markdown><script type="text/template">
+--v--
 
 #### Default Values
 
 <video width="800" height="500" controls>
   <source src="./assets/video/live_default.mp4"  type="video/mp4">
 </video>
-</script></section></section><section ><section data-markdown><script type="text/template">
+
+---
+
 ### Camera and special widgets
 
-</script></section><section data-markdown><script type="text/template">
+--v--
 
 #### Camera
 <video src="./assets/video/camera_file.webm" controls></video>
 
 Soon with videos and audios
 
-</script></section><section data-markdown><script type="text/template">
+--v--
 
 #### QML Widgets
 <video src="./assets/video/qml_html.webm" controls></video>
 
-</script></section><section data-markdown><script type="text/template">
+--v--
 
 ### Soon with any external sensors
 
 For exemple noise, polutions sensors,...
-</script></section></section><section ><section data-markdown><script type="text/template">
+
+---
+
 ### GNSS and tracking
 
-</script></section><section data-markdown><script type="text/template">
+--v--
 
 ### Integrating EGENIOUSS PROJECT
 
-</script></section><section data-markdown><script type="text/template">
+--v--
 
 ### External reciever
 <video width="800" height="500" controls>
   <source src="./assets/NMEA.mp4" type="video/mp4">
 </video>
 
-</script></section><section data-markdown><script type="text/template">
+--v--
 
 <video width="800" height="500" controls>
   <source src="./assets/tracking.webm" type="video/mp4">
@@ -103,23 +124,33 @@ For exemple noise, polutions sensors,...
 
 During tracking we can fill the M value with different information.
 For exemple the speed.
-</script></section></section><section  data-markdown><script type="text/template">
+
+---
+
 <!-- .slide: data-background="./assets/real_cloud.jpg"-->
 
 ![](./assets/logo_horizontal.png)
-</script></section><section  data-markdown><script type="text/template">
+
+---
+
 <!-- .slide: data-background="./assets/windows_crop.jpg"-->
 
 ## QField on Windows
-</script></section><section  data-markdown><script type="text/template">
+
+---
+
 <!-- .slide: data-background="./assets/ipad_crop.jpg"-->
 
 ## QField on iOS
-</script></section><section  data-markdown><script type="text/template">
+
+---
+
 <!-- .slide: data-background="./assets/ipad_crop.jpg"-->
 
 ### qfield.org/get
-</script></section><section  data-markdown><script type="text/template">
+
+---
+
 <!-- .slide: data-background="./assets/dungong.png"-->
 
 ### Diversified Dugong
@@ -127,7 +158,9 @@ For exemple the speed.
 #### 500k downloads
 
 #### 110k monthly users
-</script></section><section  data-markdown><script type="text/template">
+
+---
+
 #### Thanks! Questions?
 
 #### qfield.org | qfield.cloud
@@ -135,7 +168,10 @@ For exemple the speed.
 #### @opengisch
 
 #### info@opengis.ch
-</script></section></div>
+
+          </textarea>
+        </section>
+      </div>
     </div>
 
     <script src="./dist/reveal.js"></script>
@@ -179,7 +215,7 @@ For exemple the speed.
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"transition":"none","slideNumber":false,"overview":true,"autoPlayMedia":true}, queryOptions);
+      var options = extend(defaultOptions, {"transition":"none","slideNumber":false,"overview":true,"autoPlayMedia":true,"_":["/slides"],"static":"/html","assets-dir":"assets","assetsDir":"assets","static-dirs":"_assets/theme,assets","staticDirs":"_assets/theme,assets"}, queryOptions);
     </script>
 
 

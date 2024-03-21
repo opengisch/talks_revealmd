@@ -1,3 +1,6 @@
+> [!NOTE]
+> This was a POC that resulted in https://github.com/opengisch/teaching-and-talks
+
 ## Overview
 
 The goal of this repo is to template elegant slides with
